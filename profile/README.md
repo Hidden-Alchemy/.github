@@ -38,6 +38,20 @@
 <span style="display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid rgba(189,156,97,0.5);background:rgba(189,156,97,0.10);font-size:12.5px;margin:3px">honest lifecycle statuses</span>
 <span style="display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid rgba(140,150,160,0.3);background:rgba(140,150,160,0.07);font-size:12.5px;margin:3px">no vanity metrics</span>
 
+<br>
+
+<div style="margin-top:30px">
+<div style="text-align:left;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">QUICK PATHS · ONE CLICK TO ACTION</div>
+<table style="border-spacing:10px 10px;border-collapse:separate;width:100%;max-width:900px">
+  <tr>
+    <td style="width:25%;vertical-align:top;text-align:center;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.35);border-radius:14px;padding:16px 10px"><a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=idea_submission.yml" style="text-decoration:none">➜<div style="font-weight:800;font-size:13.5px;color:rgba(60,68,76,1);margin-top:6px">Submit an idea</div><div style="font-size:11px;color:rgba(110,119,129,1);margin-top:3px">enter the pipeline</div></a></td>
+    <td style="width:25%;vertical-align:top;text-align:center;background:linear-gradient(160deg,rgba(76,107,92,0.12),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:14px;padding:16px 10px"><a href="https://github.com/Hidden-Alchemy/community/issues/new?template=membership_interest.yml" style="text-decoration:none">➜<div style="font-weight:800;font-size:13.5px;color:rgba(60,68,76,1);margin-top:6px">Membership interest</div><div style="font-size:11px;color:rgba(110,119,129,1);margin-top:3px">a reviewed status</div></a></td>
+    <td style="width:25%;vertical-align:top;text-align:center;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.35);border-radius:14px;padding:16px 10px"><a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=project_proposal.yml" style="text-decoration:none">➜<div style="font-weight:800;font-size:13.5px;color:rgba(60,68,76,1);margin-top:6px">Propose a system</div><div style="font-size:11px;color:rgba(110,119,129,1);margin-top:3px">a concrete idea</div></a></td>
+    <td style="width:25%;vertical-align:top;text-align:center;background:linear-gradient(160deg,rgba(76,107,92,0.12),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:14px;padding:16px 10px"><a href="https://github.com/orgs/Hidden-Alchemy/projects/1" style="text-decoration:none">➜<div style="font-weight:800;font-size:13.5px;color:rgba(60,68,76,1);margin-top:6px">Idea board</div><div style="font-size:11px;color:rgba(110,119,129,1);margin-top:3px">track the pipeline</div></a></td>
+  </tr>
+</table>
+</div>
+
 <div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;max-width:900px;margin:22px auto 0"></div>
 
 </div>
@@ -161,30 +175,47 @@ Operational repositories and their <a href="https://github.com/Hidden-Alchemy/.g
 </div>
 
 <div style="border:1px solid rgba(140,150,160,0.2);border-radius:16px;overflow:hidden;margin-top:10px">
+
+<a href="https://github.com/Hidden-Alchemy/.github" style="text-decoration:none;display:block">
   <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(45,164,78,0.10),rgba(140,150,160,0.04));border-bottom:1px solid rgba(140,150,160,0.15)">
     <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:12px"></span>
-    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/.github" style="text-decoration:none">.github</a></b>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;color:rgba(60,68,76,1)">.github</b>
     <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Foundation — profile, governance, org-wide automation &amp; health files</span>
     <span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">ACTIVE</span>
+    <span style="margin-left:14px;color:rgba(110,119,129,1);font-weight:700">↗</span>
   </div>
+</a>
+
+<a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none;display:block">
   <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(45,164,78,0.10),rgba(140,150,160,0.04));border-bottom:1px solid rgba(140,150,160,0.15)">
     <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:12px"></span>
-    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none">community</a></b>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;color:rgba(60,68,76,1)">community</b>
     <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Governance docs, membership process, recognition log</span>
     <span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">ACTIVE</span>
+    <span style="margin-left:14px;color:rgba(110,119,129,1);font-weight:700">↗</span>
   </div>
+</a>
+
+<a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none;display:block">
   <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(45,164,78,0.10),rgba(140,150,160,0.04));border-bottom:1px solid rgba(140,150,160,0.15)">
     <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:12px"></span>
-    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none">ideas</a></b>
-    <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Idea pipeline intake &amp; incubation · <a href="https://github.com/orgs/Hidden-Alchemy/projects/1">Idea Lifecycle board</a></span>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;color:rgba(60,68,76,1)">ideas</b>
+    <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Idea pipeline intake &amp; incubation — tracking board lives under the same org ↗</span>
     <span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">ACTIVE</span>
+    <span style="margin-left:14px;color:rgba(110,119,129,1);font-weight:700">↗</span>
   </div>
+</a>
+
+<a href="https://github.com/Hidden-Alchemy/idea-forge" style="text-decoration:none;display:block">
   <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03))">
     <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#BD9C61;margin-right:12px"></span>
-    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/idea-forge" style="text-decoration:none">idea-forge</a></b>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;color:rgba(60,68,76,1)">idea-forge</b>
     <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Flagship — AI-assisted idea-to-system pipeline tool. Research passed; not yet built</span>
     <span style="display:inline-block;background:rgba(189,156,97,0.16);color:#BD9C61;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">CONCEPT</span>
+    <span style="margin-left:14px;color:rgba(110,119,129,1);font-weight:700">↗</span>
   </div>
+</a>
+
 </div>
 
 <div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
