@@ -707,3 +707,63 @@ a "no issue" conclusion, revert is a one-liner if a human sees it return).
 - [ ] **Discussion category reconcile (owner UI step)**
 - [ ] Manual QA: fresh-account simulation carried over from M3/M4
 - [ ] **Explicit sign-off required before proceeding to M6**
+
+---
+
+## M6 — Idea & Project Incubation Live
+
+**Committed:** `.github` push (profile README). The lifecycle test itself lives on
+`Hidden-Alchemy/ideas#3` (issue + labels + comments).
+
+### Phase 6.1 — End-to-end lifecycle test (real idea)
+
+- **Real idea seeded (not fabricated; owner-confirmed decision):** "AI-assisted
+  idea-to-system pipeline tool" — submitted via `ideas#3` with the Idea
+  Submission form's labels (`type:idea`, `status:triage`, `project-proposal`).
+- **Decision recorded (M9 consequence):** owner chose this as the M6 seed,
+  which *pre-commits the M9.1 flagship selection* to this project. Flagged in
+  the log so M9 does not re-run a selection that already has a human-confirmed
+  answer. M9 still requires explicit confirmation of *scope/first-repo decisions*
+  before Phase 9.2 scaffolds anything.
+- **Lifecycle walk (all movement via issue + label per §23's "where tracked"):**
+  - RAW IDEA → UNDER REVIEW: maintainer acknowledgement comment posted (7-day
+    SLA met), `status:triage` → `status:planned`.
+  - UNDER REVIEW → RESEARCH: feasibility & scope write-up comment ("GO",
+    involving scope-bound constraints: CLI-only v0, provider-agnostic prompts,
+    human-in-the-loop go/no-go), `status:planned` → `status:in-progress`.
+  - **Outcome: three stages moved; satisfies "at least two lifecycle stages for
+    real".**
+- **Workflows verified:** labeler no-op on form-labeled issue (had `type:idea`);
+  welcome-first-interaction did not duplicate-comment (already-introduced
+  author). No cleanup needed on `ideas#3` (issue kept pristine).
+- **Project board movement — NOT testable in this phase:** the `createProjectV2`
+  GraphQL mutation exists but requires the `project` scope; the org token has
+  only `admin:public_key, gist, read:org, repo` (verified twice:
+  `INSUFFICIENT_SCOPES`). The §23 lifecycle was executed via the issue+label
+  mechanism, which is the process source of truth; the board remains an owner
+  UI/scoped-token step (carried from M5). `ideas#3` will drop onto the board the
+  moment it exists (board expects a Status field matching §23 stages).
+
+### Phase 6.2 — Profile README update (`profile/README.md`)
+
+- §14.1 section 5 (Experimental Lab): `ideas` repo is now a live link
+  (was "being stood up as part of the org foundation work"); still honest about
+  `experiments` repo being created only when the first real experiment exists.
+- §14.1 section 8 (Join the Lab): Membership Interest form now links the live
+  `community` repo (retired the same "being stood up" phrasing).
+- Section 4 (Active Systems): unchanged — still the honest empty state
+  ("No active systems yet"); not pre-filled (M6.2 rule — only earned status).
+
+### M6 checklist
+
+- [x] Real idea submitted through the Idea Submission form surface (`ideas#3`)
+- [x] Idea moved through ≥2 lifecycle stages for real (RAW IDEA → UNDER REVIEW
+      → RESEARCH; feasibility write-up + go/no-go recorded in-issue)
+- [x] Labels verified across stages (triage → planned → in-progress; one type,
+      one status per §25; labeler no-op confirmed)
+- [x] Profile README updated: `ideas` + `community` links live; §14.3 link sweep
+      = all 200; no stale "foundation work" phrasing remains
+- [ ] Project board movement —owner UI/scoped-token step (blocked in-phase;
+      issue+label lifecycle is the §23 source of truth and passed)
+- [ ] Manual QA: fresh-account persona simulation carried over (M3/M4/M6)
+- [ ] **Explicit sign-off required before proceeding to M7**
