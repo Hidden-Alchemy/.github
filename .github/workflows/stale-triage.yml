@@ -144,8 +144,8 @@ jobs:
                       "automatically — it needs a maintainer decision (merge, "
                       "request changes, or close).")
               if not dry_run:
-                  gh("api", "-X", "POST", f"issues/{pr['number']}/comments",
-                     payload={"body": body})
+                  gh_api("POST", f"issues/{pr['number']}/comments",
+                         payload={"body": body})
 
           verb = "would have pinged/noted" if dry_run else "pinged/noted"
           print(f"[stale-triage] {verb} {seen_would} item(s) needing attention "
