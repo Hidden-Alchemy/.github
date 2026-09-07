@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 300" role="img" font-family="'Inter',-apple-system,'Segoe UI',Roboto,sans-serif">
+  <title>Hidden Alchemy pipeline — Idea, Concept, Architecture, System, Automation, Reality</title>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0 H0 V44" fill="none" stroke="#161b22" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E3C080"/>
+      <stop offset="1" stop-color="#BD9C61"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1120" height="300" fill="url(#grid)"/>
+
+  <path d="M95 150 L289 128 L483 150 L677 172 L871 150 L1055 128"
+        fill="none" stroke="#30363d" stroke-width="3.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M483 150 L677 172 L871 150 L1055 128"
+        fill="none" stroke="#21262d" stroke-width="3.5" stroke-dasharray="2 11"
+        stroke-linecap="round" stroke-linejoin="round">
+    <animate attributeName="stroke-dashoffset" from="0" to="-104" dur="14s" repeatCount="indefinite"/>
+  </path>
+  <path d="M95 150 L289 128" fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round"/>
+
+  <path d="M289 128 L483 150" fill="none" stroke="url(#gold)" stroke-width="6"
+        stroke-linecap="round" stroke-dasharray="16 10">
+    <animate attributeName="stroke-dashoffset" from="0" to="-52" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+  <path d="M482 146 L480 127 L501 140 Z" fill="#E3C080"/>
+
+  <g filter="url(#glow)">
+    <circle r="6.5" fill="#E3C080">
+      <animateMotion dur="9s" repeatCount="indefinite" path="M95 150 L289 128 L483 150 L677 172 L871 150 L1055 128"/>
+    </circle>
+    <circle r="6.5" fill="#6E9E87">
+      <animateMotion dur="9s" begin="4.5s" repeatCount="indefinite" path="M95 150 L289 128 L483 150 L677 172 L871 150 L1055 128"/>
+    </circle>
+  </g>
+
+  <circle cx="289" cy="128" r="27" fill="none" stroke="#E3C080" stroke-width="2">
+    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="95" cy="150" r="13" fill="#BD9C61" stroke="#0d1117" stroke-width="3"/>
+  <circle cx="289" cy="128" r="13" fill="#6E9E87" stroke="#0d1117" stroke-width="3"/>
+  <circle cx="483" cy="150" r="13" fill="#0d1117" stroke="#484f58" stroke-width="2.5"/>
+  <circle cx="677" cy="172" r="13" fill="#0d1117" stroke="#484f58" stroke-width="2.5"/>
+  <circle cx="871" cy="150" r="13" fill="#0d1117" stroke="#484f58" stroke-width="2.5"/>
+  <circle cx="1055" cy="128" r="13" fill="#6E9E87" stroke="#0d1117" stroke-width="3"/>
+
+  <g text-anchor="middle" fill="#e6edf3" font-weight="700" font-size="16">
+    <text x="95" y="192">IDEA</text>
+    <text x="289" y="170">CONCEPT</text>
+    <text x="483" y="192">ARCHITECTURE</text>
+    <text x="677" y="214">SYSTEM</text>
+    <text x="871" y="192">AUTOMATION</text>
+    <text x="1055" y="170">REALITY</text>
+  </g>
+  <g text-anchor="middle" fill="#8b949e" font-size="10.5">
+    <text x="95" y="208">intake + spec</text>
+    <text x="289" y="186">current focus</text>
+    <text x="483" y="208">design the shape</text>
+    <text x="677" y="230">build a working thing</text>
+    <text x="871" y="208">leverage the repetitive</text>
+    <text x="1055" y="186">used, archived</text>
+  </g>
+  <text x="22" y="286" fill="#6e7681" font-size="10.5" letter-spacing="1">STATUS · CONCEPT — [idea-forge] is the current pipeline focus. Every stage stays human-gated.</text>
+</svg>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" role="img" font-family="'Inter',-apple-system,'Segoe UI',Roboto,sans-serif">
+  <title>Hidden Alchemy contribution pathway — Explore, Discuss, Contribute, Collaborate, Recognition, Trust, Membership eligibility</title>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0 H0 V44" fill="none" stroke="#eef1f4" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="gold" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#C9A96A"/>
+      <stop offset="1" stop-color="#BD9C61"/>
+    </linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="900" height="780" fill="url(#grid)"/>
+
+  <path d="M120 700 H250" fill="none" stroke="#d6dde3" stroke-width="3" stroke-dasharray="4 8" stroke-linejoin="round">
+    <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.5s" repeatCount="indefinite"/>
+  </path>
+
+  <path d="M250 700 L650 620 L250 540 L650 460 L250 380 L650 300 L250 220"
+        fill="none" stroke="#c6ced6" stroke-width="3.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M250 380 L650 300 L250 220"
+        fill="none" stroke="url(#gold)" stroke-width="6"
+        stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="14 10">
+    <animate attributeName="stroke-dashoffset" from="0" to="-48" dur="2.2s" repeatCount="indefinite"/>
+  </path>
+
+  <g filter="url(#glow)">
+    <circle r="7" fill="#BD9C61">
+      <animateMotion dur="13s" repeatCount="indefinite" path="M120 700 L250 700 L650 620 L250 540 L650 460 L250 380 L650 300 L250 220"/>
+    </circle>
+    <circle r="7" fill="#4C6B5C">
+      <animateMotion dur="13s" begin="6.5s" repeatCount="indefinite" path="M120 700 L250 700 L650 620 L250 540 L650 460 L250 380 L650 300 L250 220"/>
+    </circle>
+  </g>
+
+  <circle cx="650" cy="300" r="26" fill="none" stroke="#4C6B5C" stroke-width="2">
+    <animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="250" cy="220" r="26" fill="none" stroke="#BD9C61" stroke-width="2">
+    <animate attributeName="opacity" values="0.25;0.75;0.25" dur="2.4s" begin="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="250" cy="700" r="18" fill="#ffffff" stroke="#c3cad1" stroke-width="2.5"/>
+  <circle cx="650" cy="620" r="18" fill="#ffffff" stroke="#c3cad1" stroke-width="2.5"/>
+  <circle cx="250" cy="540" r="18" fill="#ffffff" stroke="#c3cad1" stroke-width="2.5"/>
+  <circle cx="650" cy="460" r="18" fill="#ffffff" stroke="#c3cad1" stroke-width="2.5"/>
+  <circle cx="250" cy="380" r="18" fill="#BD9C61" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="650" cy="300" r="18" fill="#4C6B5C" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="250" cy="220" r="18" fill="url(#gold)" stroke="#ffffff" stroke-width="3"/>
+
+  <g fill="#1f2328" font-weight="700" font-size="15">
+    <text x="222" y="705" text-anchor="end">EXPLORE</text>
+    <text x="678" y="625" text-anchor="start">DISCUSS</text>
+    <text x="222" y="545" text-anchor="end">CONTRIBUTE</text>
+    <text x="678" y="465" text-anchor="start">COLLABORATE</text>
+    <text x="222" y="385" text-anchor="end">RECOGNITION</text>
+    <text x="678" y="305" text-anchor="start">TRUST</text>
+    <text x="222" y="225" text-anchor="end">MEMBERSHIP ELIGIBILITY</text>
+  </g>
+  <g fill="#6e7781" font-size="10.5">
+    <text x="222" y="722" text-anchor="end">no membership required</text>
+    <text x="678" y="642" text-anchor="start">public channels, issues</text>
+    <text x="222" y="562" text-anchor="end">first accepted contribution</text>
+    <text x="678" y="482" text-anchor="start">deeper, trusted work</text>
+    <text x="222" y="402" text-anchor="end">≥ 3 accepted · 1+ month</text>
+    <text x="678" y="322" text-anchor="start">sustained + reviewed</text>
+    <text x="222" y="242" text-anchor="end">earned, never demanded</text>
+  </g>
+  <text x="222" y="263" text-anchor="end" fill="#BD9C61" font-weight="700" font-size="10" letter-spacing="1">★ EARNED</text>
+
+  <text x="450" y="756" text-anchor="middle" fill="#9aa4af" font-size="11">
+    The pathway is public until the very last step — no organization membership is needed to explore, discuss, or contribute.
+  </text>
+</svg>
