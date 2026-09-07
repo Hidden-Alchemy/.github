@@ -3,9 +3,7 @@
 # Per PRD §30.7: changes to privileged automation, the CODEOWNERS file itself,
 # and the security policy always require Core Team review.
 #
-# NOTE: @Hidden-Alchemy/core is created in milestone M1 Phase 1.3. Until that
-# team exists, GitHub cannot resolve the owner for these paths (review is
-# required, not enforced). The team creation is a manual org-admin action.
+# @Hidden-Alchemy/core was created in M1 Phase 1.3 (2026-09-07).
 
 /workflows/**        @Hidden-Alchemy/core
 /.github/CODEOWNERS  @Hidden-Alchemy/core

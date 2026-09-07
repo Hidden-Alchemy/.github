@@ -213,6 +213,19 @@ This is a genuine credential blocker, not a process ambiguity:
    token with Administration:write on the org) so team creation can be
    automated via API with this exact payload.
 
+**RESOLVED 2026-09-07** — after the owner set up `gh auth login` as `Hassan0703`,
+teams were created via `gh api`:
+
+- `core` created (`POST /orgs/Hidden-Alchemy/teams`, slug `core`); `Hassan0703`
+  added with role `maintainer`. Members now: `Hassan0703`.
+- `community` created (slug `community`); Shelley's auto-added creator entry
+  (`Hassan0703`, added implicitly at creation) removed via
+  `DELETE /teams/community/memberships/Hassan0703`. Members now: `[]` (empty,
+  as required by Task 1.3.2 — populated only through the M7 process).
+- Verified via `GET /orgs/Hidden-Alchemy/teams` → `community`, `core`.
+- CODEOWNERS header comment updated to reflect that `@Hidden-Alchemy/core`
+  now exists (Task 1.2.4's "referenced team exists" criterion is satisfied).
+
 ### Phase 1.4 — License & governance stub
 
 - **Task 1.4.1 — `GOVERNANCE.md` (new, lightweight, M8-finalizable):** §33 content complete (decision-making simple consensus, single accountable maintainer per repo, conflict resolution, archival decisions, leadership changes incl. WHEN-SCALE-REQUIRES-IT note). Membership section **clearly marked "finalized in milestone M7"** — not a silent gap (no `<!-- TODO -->` HTML comment; deliberate bold marker, so the M4 repo-health-check TODO-scan will not false-flag it). Includes the §19 canonical verbatim membership distinction, §12.1 repository-creation rule carried forward (per Risks mitigation, §61), lifecycle status list (§24), and Future Expansion triggers (§61). Acceptance: [x] present; [x] §33 content complete; [x] membership section explicitly marked M7-finalized.
@@ -221,28 +234,28 @@ This is a genuine credential blocker, not a process ambiguity:
 
 - `find` tree diff vs §13: pass (structure + preserved legacy profile dir only).
 - Link/integrity review of new files: internal references (CONTRIBUTING.md, SECURITY.md, GOVERNANCE.md, LICENSE) resolve as of M1 file set; CONTRIBUTING.md itself lands in M3 (referenced from root README — acceptable, matches PRD sequencing; M2 profile links already logged as known limitation to close at M3).
-- Team API creation attempt: FAILED as documented above (403) — logged, does not block any file task but blocks Phase 1.3 acceptance.
+- Team API creation attempt: initially FAILED (403, stale credential) — **RESOLVED** via `gh auth` (owner token): `core` + `community` created 2026-09-07, verified via `GET /orgs/Hidden-Alchemy/teams` (see Phase 1.3 resolution above).
 - No workflows exist yet in M1 (expected — workflows ship in M4). repo-health-check cannot run yet (expected per M1 checklist).
 
 ### M1 Completion Checklist
 
 - [x] Phase 1.1 tasks 1.1.1–1.1.2 pass acceptance
 - [x] Phase 1.2 tasks 1.2.1–1.2.3 pass acceptance
-- [~] Phase 1.2 task 1.2.4 PASSES file acceptance; **team-exists dependency open** (Phase 1.3)
-- [ ] Phase 1.3 tasks 1.3.1–1.3.2 — **NOT DONE: BLOCKED** on org-admin credential (owner action required)
+- [x] Phase 1.2 task 1.2.4 — file correct; referenced team `@Hidden-Alchemy/core` now exists (created in Phase 1.3)
+- [x] Phase 1.3 tasks 1.3.1–1.3.2 — `core` team created with Hassan0703; `community` team created, empty
 - [x] Phase 1.4 task 1.4.1 passes acceptance
 - [x] `repo-health-check` not yet runnable (workflows arrive in M4) — expected, not a blocker
 - [x] Manual review: directory structure matches §13 exactly (plus preserved legacy profile/ pending M2)
 - [x] Implementation log updated
-- [ ] **Explicit sign-off required before proceeding to M2** — and Phase 1.3 team creation must be completed by the organization owner.
+- [X] **M1 sign-off recorded 2026-09-07** (human sign-off: owner set up `gh auth`, teams created; instructed to continue with remaining milestones). M1 is complete.
 
-_End of M1 entry._
+_End of M1 entry. Next milestone: M2 — Identity & Profile Experience.
 
 ---
 
 ### Open Issue status update
 
-- **#1 (Owners):** Resolved in practice — SSH key = Hassan0703 (owner-equivalent git access); sole public member. Remains unconfirmed formally for `core` team membership (P1.3).
-- **#2 (Private repos):** Awaiting owner confirmation; not a blocker for M1 files.
-- **#3 (Teams):** Confirmed effectively empty — API attempt returned no teams (403 prevented enumeration; owner creation pending). Directly relevant to Phase 1.3.
+- **#1 (Owners):** RESOLVED — SSH key + `gh auth` token both act as `Hassan0703`, the org Owner; sole public member; sole `core` team member (role maintainer). Confirmed 2026-09-07.
+- **#2 (Private repos):** Awaiting owner confirmation (owner API can enumerate; see M2 note if relevant); not a blocker for M1.
+- **#3 (Teams):** RESOLVED — `core` (Hassan0703) and `community` (empty) created 2026-09-07 via `gh api`.
 - **#4 (Verdigris color):** Still open for M2 — decision required before visual system work.
