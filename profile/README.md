@@ -1,117 +1,335 @@
-<div style="height:6px;background:linear-gradient(90deg,#BD9C61,#4C6B5C,#BD9C61)"></div>
+<div align="center">
 
-<div style="text-align:center;padding:58px 16px 0">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-white-transparent.png">
-  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-black-transparent.png" width="152" alt="Hidden Alchemy"></picture>
-</div>
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-black-transparent.png" width="150" alt="Hidden Alchemy mark">
+</picture>
 
-<div style="text-align:center;margin:36px auto 0;max-width:1000px;padding:0 12px">
+# <span style="font-size:34px;font-weight:900;letter-spacing:-0.5px">Hidden Alchemy</span>
+
+<span style="font-size:17px;color:rgba(130,140,150,1)">open engineering laboratory · raw ideas → real systems</span>
+
+<br>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/banner-3d-dark.svg">
-  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/banner-3d-light.svg" width="100%" alt="Animated 3D pipeline — IDEA → CONCEPT → ARCHITECTURE → SYSTEM → AUTOMATION → REALITY"></picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/hero-dark.svg">
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/hero-light.svg" width="100%" style="max-width:900px;border-radius:16px" alt="Animated pipeline IDEA → CONCEPT → ARCHITECTURE → SYSTEM → AUTOMATION → REALITY">
+</picture>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/pulse/assets/svg/org-pulse.svg" width="100%" style="max-width:900px;border-radius:16px" alt="Live org pulse — repositories, ideas in flight, active systems, pipeline stage">
+
+<div style="margin-top:6px;font-size:11.5px;letter-spacing:1px;color:rgba(154,164,175,1)">LIVE SNAPSHOT · REGENERATED DAILY BY <a href="https://github.com/Hidden-Alchemy/.github/blob/main/.github/workflows/org-pulse-svg.yml" style="text-decoration:none;color:rgba(154,164,175,1)">org-pulse</a></div>
+
+<br>
+
+<span style="display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid rgba(140,150,160,0.3);background:rgba(140,150,160,0.07);font-size:12.5px;margin:3px">open source</span>
+<span style="display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid rgba(45,164,78,0.4);background:rgba(45,164,78,0.08);font-size:12.5px;margin:3px">security-reviewed automation</span>
+<span style="display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid rgba(189,156,97,0.5);background:rgba(189,156,97,0.10);font-size:12.5px;margin:3px">honest lifecycle statuses</span>
+<span style="display:inline-block;padding:6px 14px;border-radius:999px;border:1px solid rgba(140,150,160,0.3);background:rgba(140,150,160,0.07);font-size:12.5px;margin:3px">no vanity metrics</span>
+
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;max-width:900px;margin:22px auto 0"></div>
+
 </div>
 
-<div style="text-align:center;margin:26px auto 0;max-width:900px;padding:0 12px">
-<img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/pulse/assets/svg/org-pulse.svg" width="100%" style="border-radius:20px" alt="Live org pulse dashboard — repositories, ideas in flight, active systems, health">
-<div style="margin-top:10px;font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:2px;color:rgba(140,149,159,1)">LIVE DASHBOARD · REGENERATED DAILY BY <a href="https://github.com/Hidden-Alchemy/.github/blob/main/.github/workflows/org-pulse-svg.yml" style="text-decoration:none;color:rgba(189,156,97,1)">org-pulse</a></div>
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">Stage system</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">The Alchemy Process</h2>
+
+Every repository occupies one stage of the same pipeline. Most good ideas die somewhere between concept and execution — this lab's whole job is closing that gap, **in public**, so the process can be inspected and shared.
+
+<table style="border-spacing:12px 12px;border-collapse:separate">
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.10),rgba(76,107,92,0.06) 60%,rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:999px;padding:2px 10px;font-size:11.5px;font-weight:800">01</span>&nbsp;
+      <b style="font-size:16px">IDEA</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">A raw idea is written down and submitted — nothing more.</div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.16),rgba(189,156,97,0.05));border:1px solid rgba(189,156,97,0.5);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:999px;padding:2px 10px;font-size:11.5px;font-weight:800">02</span>&nbsp;
+      <b style="font-size:16px">CONCEPT</b>
+      <span style="display:inline-block;background:#BD9C61;color:#0d1117;border-radius:6px;padding:1px 8px;font-size:10px;font-weight:800;margin-left:6px;letter-spacing:1px">CURRENT</span>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Examined for actual value and boundary — what it is, what it is <b>not</b>.</div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:999px;padding:2px 10px;font-size:11.5px;font-weight:800">03</span>&nbsp;
+      <b style="font-size:16px">ARCHITECTURE</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">The shape of the system is decided before any code exists.</div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:999px;padding:2px 10px;font-size:11.5px;font-weight:800">04</span>&nbsp;
+      <b style="font-size:16px">SYSTEM</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">A working thing exists: built, tested, honest about its limits.</div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:999px;padding:2px 10px;font-size:11.5px;font-weight:800">05</span>&nbsp;
+      <b style="font-size:16px">AUTOMATION</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">The repetitive parts are automated so the system creates leverage.</div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(45,164,78,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#3FB950,#2DA44E);color:#ffffff;border-radius:999px;padding:2px 10px;font-size:11.5px;font-weight:800">06</span>&nbsp;
+      <b style="font-size:16px">REALITY</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Used, maintained — and when its time passes, archived with a reason.</div>
+    </td>
+  </tr>
+</table>
+
+<div style="background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.2);border-radius:12px;padding:10px 14px">
+<div style="font-size:10.5px;letter-spacing:2px;color:rgba(154,164,175,1);margin-bottom:8px">TRACK</div>
+<div style="display:flex">
+  <span style="flex:1;text-align:center;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:8px 0 0 8px;padding:6px 0;font-size:12px;font-weight:800">IDEA&nbsp;✓</span>
+  <span style="flex:1;text-align:center;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:0;padding:6px 0;font-size:12px;font-weight:800">CONCEPT&nbsp;◉</span>
+  <span style="flex:1;text-align:center;background:rgba(140,150,160,0.15);color:rgba(154,164,175,1);border-radius:0;padding:6px 0;font-size:12px;font-weight:700">ARCHITECTURE</span>
+  <span style="flex:1;text-align:center;background:rgba(140,150,160,0.10);color:rgba(154,164,175,1);border-radius:0;padding:6px 0;font-size:12px;font-weight:700">SYSTEM</span>
+  <span style="flex:1;text-align:center;background:rgba(140,150,160,0.10);color:rgba(154,164,175,1);border-radius:0;padding:6px 0;font-size:12px;font-weight:700">AUTOMATION</span>
+  <span style="flex:1;text-align:center;background:rgba(140,150,160,0.10);color:rgba(154,164,175,1);border-radius:0 8px 8px 0;padding:6px 0;font-size:12px;font-weight:700">REALITY</span>
+</div>
+<div style="margin-top:6px;font-size:12px;color:rgba(110,119,129,1)">Current lock: <b style="color:#BD9C61">CONCEPT</b> — the <code style="font-family:SFMono-Regular,Consolas,Menlo,monospace">idea-forge</code> flagship. Every transition stays a human decision.</div>
 </div>
 
-<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
-<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">01</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">HOW WE WORK</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">The Alchemy Process</div>
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
+
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">Domain territory</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">What We Build</h2>
+
+Where the process is currently applied — not everything software can be, the lab's actual territory.
+
+<table style="border-spacing:12px 12px;border-collapse:separate">
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:10px;padding:4px 10px;font-size:12px;font-weight:800">F</span>&nbsp;
+      <b style="font-size:16px">Frappe &amp; ERPNext</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">
+        <span style="display:block;margin:3px 0">▸ Purpose-built systems on the Frappe Framework</span>
+        <span style="display:block;margin:3px 0">▸ ERPNext customization, custom DocTypes</span>
+        <span style="display:block;margin:3px 0">▸ Workflow engineering &amp; integrations</span>
+      </div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.12),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:10px;padding:4px 10px;font-size:12px;font-weight:800">AI</span>&nbsp;
+      <b style="font-size:16px">AI &amp; Automation</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">
+        <span style="display:block;margin:3px 0">▸ AI that observes, reasons, executes</span>
+        <span style="display:block;margin:3px 0">▸ Agentic workflows, orchestration, assistants</span>
+        <span style="display:block;margin:3px 0">▸ Never an “AI button” for its own sake</span>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:10px;padding:4px 10px;font-size:12px;font-weight:800">S</span>&nbsp;
+      <b style="font-size:16px">Software &amp; Product Engineering</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">
+        <span style="display:block;margin:3px 0">▸ Architecture, usability, maintainability</span>
+        <span style="display:block;margin:3px 0">▸ Developer experience, the discipline of shipping</span>
+      </div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:10px;padding:4px 10px;font-size:12px;font-weight:800">R</span>&nbsp;
+      <b style="font-size:16px">Research &amp; Experimentation</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">
+        <span style="display:block;margin:3px 0">▸ Genuine investigation, small labeled experiments</span>
+        <span style="display:block;margin:3px 0">▸ Failure is a recorded outcome — never a secret</span>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
+
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">Live inventory</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">Active Systems</h2>
+
+Operational repositories and their <a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md">lifecycle status</a>. Only things that genuinely work are listed — nothing is marked active before it is. Health verified <b>4/4</b> by the org-wide <code style="font-family:SFMono-Regular,Consolas,Menlo,monospace">repo-health-check</code>.
+
+<div>
+<span style="display:inline-block;padding:4px 12px;border-radius:999px;border:1px solid rgba(45,164,78,0.45);background:rgba(45,164,78,0.08);font-size:12px;margin:3px"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#2DA44E;margin-right:6px"></span><b>active</b>&nbsp;· running infra</span>
+<span style="display:inline-block;padding:4px 12px;border-radius:999px;border:1px solid rgba(189,156,97,0.5);background:rgba(189,156,97,0.10);font-size:12px;margin:3px"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#BD9C61;margin-right:6px"></span><b>concept</b>&nbsp;· researched, not yet built</span>
 </div>
 
-<div style="text-align:center;margin:30px auto 0;max-width:900px">
-<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">IDEA</span>
-<span style="display:inline-block;padding:12px 26px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:16px;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;box-shadow:0 6px 22px rgba(189,156,97,0.4);border:1px solid rgba(189,156,97,0.7)">CONCEPT&nbsp;&nbsp;·&nbsp;&nbsp;CURRENT</span>
-<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">ARCHITECTURE</span>
-<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">SYSTEM</span>
-<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">AUTOMATION</span>
-<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">REALITY</span>
+<div style="border:1px solid rgba(140,150,160,0.2);border-radius:16px;overflow:hidden;margin-top:10px">
+  <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(45,164,78,0.10),rgba(140,150,160,0.04));border-bottom:1px solid rgba(140,150,160,0.15)">
+    <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:12px"></span>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/.github" style="text-decoration:none">.github</a></b>
+    <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Foundation — profile, governance, org-wide automation &amp; health files</span>
+    <span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">ACTIVE</span>
+  </div>
+  <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(45,164,78,0.10),rgba(140,150,160,0.04));border-bottom:1px solid rgba(140,150,160,0.15)">
+    <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:12px"></span>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none">community</a></b>
+    <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Governance docs, membership process, recognition log</span>
+    <span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">ACTIVE</span>
+  </div>
+  <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(45,164,78,0.10),rgba(140,150,160,0.04));border-bottom:1px solid rgba(140,150,160,0.15)">
+    <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:12px"></span>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none">ideas</a></b>
+    <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Idea pipeline intake &amp; incubation · <a href="https://github.com/orgs/Hidden-Alchemy/projects/1">Idea Lifecycle board</a></span>
+    <span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">ACTIVE</span>
+  </div>
+  <div style="display:flex;align-items:center;padding:12px 18px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03))">
+    <span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#BD9C61;margin-right:12px"></span>
+    <b style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px"><a href="https://github.com/Hidden-Alchemy/idea-forge" style="text-decoration:none">idea-forge</a></b>
+    <span style="margin-left:12px;font-size:13px;color:rgba(110,119,129,1);flex:1">Flagship — AI-assisted idea-to-system pipeline tool. Research passed; not yet built</span>
+    <span style="display:inline-block;background:rgba(189,156,97,0.16);color:#BD9C61;border-radius:6px;padding:2px 9px;font-size:10.5px;font-weight:800;letter-spacing:1px">CONCEPT</span>
+  </div>
 </div>
 
-<div style="text-align:center;margin:22px auto 0;max-width:680px;font-size:16.5px;line-height:1.8;color:rgba(110,119,129,1)">Every stage writes a real artifact. Every transition is a human decision. Nothing advances alone, and nothing is labelled done until it is.</div>
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
 
-<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
-<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">02</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">DOMAIN TERRITORY</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">What We Build</div>
-</div>
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">Experiment zone</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">Experimental Lab</h2>
 
-<div style="text-align:center;margin:30px auto 0;max-width:940px">
-<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">Frappe &amp; ERPNext</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">Purpose-built systems on the Frappe Framework — ERPNext customization, custom DocTypes, workflow engineering.</div></div>
-<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">AI &amp; Automation</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">AI that observes, reasons and executes — agentic workflows and orchestration, never an “AI button” for its own sake.</div></div>
-<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">Software &amp; Product</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">Architecture, usability and maintainability — and the discipline of shipping, not just starting.</div></div>
-<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">Research &amp; Experimentation</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">Genuine investigation, small labeled experiments — failure is a recorded outcome, never a secret.</div></div>
-</div>
+Short-lived, honestly-labeled explorations that have not yet earned a dedicated repository: a hypothesis, an objective, a status, a next step — and, when appropriate, a recorded dead end.
 
-<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
-<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">03</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">ALIVE &amp; HONEST</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">Active Systems</div>
-</div>
+<table style="border-spacing:12px 12px;border-collapse:separate">
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <b style="font-size:16px">Idea intake</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Every experiment starts as a written idea in the <a href="https://github.com/Hidden-Alchemy/ideas">ideas</a> repo, walked through the §23 lifecycle by issue &amp; label — and tracked on the <a href="https://github.com/orgs/Hidden-Alchemy/projects/1">board</a>.</div>
+      <div style="margin-top:12px"><a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=idea_submission.yml" style="display:inline-block;padding:9px 18px;border-radius:999px;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;font-weight:700;text-decoration:none;font-size:13.5px">Submit an idea →</a></div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.05));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:18px 20px">
+      <b style="font-size:16px">Experiment scratch</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Short-lived experimental code lives in an <code style="font-family:SFMono-Regular,Consolas,Menlo,monospace">experiments</code> repository — created only when the first real experiment exists, never before. Not every experiment becomes a product; that is intentional.</div>
+    </td>
+  </tr>
+</table>
 
-<div style="text-align:center;margin:30px auto 0;max-width:820px">
-<div style="text-align:left;margin:10px 8px;background:rgba(45,164,78,0.07);border:1px solid rgba(45,164,78,0.25);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2DA44E;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/.github" style="text-decoration:none;color:inherit">.github</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· the foundation — profile, governance, org-wide automation</span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(45,164,78,0.15);color:#2DA44E;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">ACTIVE</span></div>
-<div style="text-align:left;margin:10px 8px;background:rgba(45,164,78,0.07);border:1px solid rgba(45,164,78,0.25);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2DA44E;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none;color:inherit">community</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· membership, recognition log, Contribution Ladder</span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(45,164,78,0.15);color:#2DA44E;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">ACTIVE</span></div>
-<div style="text-align:left;margin:10px 8px;background:rgba(45,164,78,0.07);border:1px solid rgba(45,164,78,0.25);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2DA44E;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none;color:inherit">ideas</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· idea pipeline intake &amp; <a href="https://github.com/orgs/Hidden-Alchemy/projects/1" style="text-decoration:none;color:inherit">the board</a></span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(45,164,78,0.15);color:#2DA44E;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">ACTIVE</span></div>
-<div style="text-align:left;margin:10px 8px;background:linear-gradient(160deg,rgba(189,156,97,0.14),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.45);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#BD9C61;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/idea-forge" style="text-decoration:none;color:inherit">idea-forge</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· flagship — AI-assisted idea-to-system tool · phase 02/06</span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(189,156,97,0.18);color:#BD9C61;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">CONCEPT</span></div>
-</div>
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
 
-<div style="text-align:center;margin:18px auto 0;max-width:680px;font-size:14.5px;color:rgba(140,149,159,1)">Every status above is machine-verified by the org-wide <b style="color:#2DA44E">repo-health</b> check — nothing is marked active before it is. <b style="color:#2DA44E">4/4 green.</b></div>
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">First contribution</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">How to Participate</h2>
 
-<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
-<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">04</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">GET INVOLVED</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">How to Participate</div>
-</div>
+Anyone can contribute publicly without any membership — here, or anywhere on the pathway below.
 
-<div style="text-align:center;margin:30px auto 0;max-width:900px">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-pathway-dark.svg">
-  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-pathway-light.svg" width="100%" style="border-radius:20px" alt="Contribution pathway — EXPLORE → DISCUSS → CONTRIBUTE → COLLABORATE → RECOGNITION → TRUST → MEMBERSHIP"></picture>
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-pathway-light.svg" width="100%" style="max-width:680px" alt="Animated contribution pathway EXPLORE → DISCUSS → CONTRIBUTE → COLLABORATE → RECOGNITION → TRUST → MEMBERSHIP ELIGIBILITY">
+</picture>
+
+Your entry point is one of these, or a direct pull request to documentation:
+
+<table style="border-spacing:12px 12px;border-collapse:separate">
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(140,150,160,0.10),rgba(140,150,160,0.03));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <b style="font-size:15px">Found a bug?</b>
+      <div style="font-size:13px;color:rgba(110,119,129,1);margin-top:4px">Reproduce it, report it.</div>
+      <div style="margin-top:10px"><a href="https://github.com/Hidden-Alchemy/.github/issues/new?template=bug_report.yml" style="display:inline-block;padding:7px 16px;border-radius:999px;border:1px solid rgba(140,150,160,0.4);font-size:12.5px;font-weight:600;text-decoration:none">Bug report</a></div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <b style="font-size:15px">Have an idea for the lab?</b>
+      <div style="font-size:13px;color:rgba(110,119,129,1);margin-top:4px">Raw ideas are welcome at the top of the pipeline.</div>
+      <div style="margin-top:10px"><a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=idea_submission.yml" style="display:inline-block;padding:7px 16px;border-radius:999px;border:1px solid rgba(189,156,97,0.6);color:#BD9C61;font-size:12.5px;font-weight:600;text-decoration:none">Idea submission</a></div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.03));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <b style="font-size:15px">Proposing a concrete system?</b>
+      <div style="font-size:13px;color:rgba(110,119,129,1);margin-top:4px">Go straight into the pipeline.</div>
+      <div style="margin-top:10px"><a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=project_proposal.yml" style="display:inline-block;padding:7px 16px;border-radius:999px;border:1px solid rgba(140,150,160,0.4);font-size:12.5px;font-weight:600;text-decoration:none">Project proposal</a></div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(140,150,160,0.10),rgba(140,150,160,0.03));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <b style="font-size:15px">Documentation fix?</b>
+      <div style="font-size:13px;color:rgba(110,119,129,1);margin-top:4px">Open a PR directly — no pre-approval for small fixes.</div>
+      <div style="margin-top:10px"><a href="https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md" style="display:inline-block;padding:7px 16px;border-radius:999px;border:1px solid rgba(140,150,160,0.4);font-size:12.5px;font-weight:600;text-decoration:none">Contributing guide</a></div>
+    </td>
+  </tr>
+</table>
+
+<div style="font-size:12.5px;color:rgba(110,119,129,1)">Before your first contribution, read the <a href="https://github.com/Hidden-Alchemy/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> — it is short and worth the two minutes.</div>
+
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
+
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">The compact list</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">Organization Principles</h2>
+
+<table style="border-spacing:12px 12px;border-collapse:separate">
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-size:11.5px;font-weight:800">01</span>
+      <b style="font-size:15px;margin-left:6px">Build, Don't Perform</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">What works matters more than what looks impressive in a demo.</div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:999px;padding:3px 11px;font-size:11.5px;font-weight:800">02</span>
+      <b style="font-size:15px;margin-left:6px">Complexity Should Become Invisible</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Good engineering hides unnecessary complexity from the user.</div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-size:11.5px;font-weight:800">03</span>
+      <b style="font-size:15px;margin-left:6px">Automation Should Create Leverage</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Automate what shouldn't require human repetition — not everything.</div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:999px;padding:3px 11px;font-size:11.5px;font-weight:800">04</span>
+      <b style="font-size:15px;margin-left:6px">Design Is Part of Engineering</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">A technically correct system can still be a bad product.</div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-size:11.5px;font-weight:800">05</span>
+      <b style="font-size:15px;margin-left:6px">Experiment Relentlessly</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Prototype. Break. Measure. Refine. Repeat — and record the outcome honestly.</div>
+    </td>
+    <td style="width:50%;vertical-align:top;background:linear-gradient(160deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.2);border-radius:16px;padding:16px 20px">
+      <span style="display:inline-block;background:linear-gradient(135deg,#E3C080,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-size:11.5px;font-weight:800">06</span>
+      <b style="font-size:15px;margin-left:6px">Details Compound</b>
+      <div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:6px">Small decisions become large differences when repeated across a system.</div>
+    </td>
+  </tr>
+</table>
+
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
+
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">The threshold</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">Join the Lab</h2>
+
+<div style="background:linear-gradient(160deg,rgba(76,107,92,0.14),rgba(140,150,160,0.04));border:1px solid rgba(76,107,92,0.35);border-left:4px solid #4C6B5C;border-radius:16px;padding:22px 24px">
+
+<b style="font-size:16px">Membership is earned through contribution, not requested on demand.</b>
+
+<div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">Organization membership is a separate, <b>reviewed</b> status — it is not the same as contributing. Anyone can contribute publicly without ever becoming a member. The bar, plainly:</div>
+
+<table style="border-spacing:0 10px;border-collapse:separate;margin-top:8px">
+  <tr>
+    <td style="width:34px;vertical-align:top"><span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:50%;width:24px;height:24px;text-align:center;line-height:24px;font-size:12px;font-weight:800">1</span></td>
+    <td style="vertical-align:top;font-size:13.5px;color:rgba(110,119,129,1)"><b style="color:rgba(60,68,76,1)">Earn it first.</b> Be a <b>Recognized Contributor</b>: at least three accepted contributions spanning at least a month.</td>
+  </tr>
+  <tr>
+    <td style="width:34px;vertical-align:top"><span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:50%;width:24px;height:24px;text-align:center;line-height:24px;font-size:12px;font-weight:800">2</span></td>
+    <td style="vertical-align:top;font-size:13.5px;color:rgba(110,119,129,1)"><b style="color:rgba(60,68,76,1)">Submit</b> the <b>Membership Interest form</b> in the <code style="font-family:SFMono-Regular,Consolas,Menlo,monospace">community</code> repository.</td>
+  </tr>
+  <tr>
+    <td style="width:34px;vertical-align:top"><span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:50%;width:24px;height:24px;text-align:center;line-height:24px;font-size:12px;font-weight:800">3</span></td>
+    <td style="vertical-align:top;font-size:13.5px;color:rgba(110,119,129,1)"><b style="color:rgba(60,68,76,1)">Review, recorded.</b> A human maintainer checks against published criteria; the decision is written on the issue. Invitations are always sent manually — never automated.</td>
+  </tr>
+</table>
+
+<div style="margin-top:14px">
+<a href="https://github.com/Hidden-Alchemy/community/issues/new?template=membership_interest.yml" style="display:inline-block;padding:10px 20px;border-radius:999px;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;font-weight:700;text-decoration:none;font-size:13.5px">Membership interest</a>
+<a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md" style="display:inline-block;padding:10px 20px;border-radius:999px;border:1px solid rgba(76,107,92,0.6);color:#4C6B5C;font-weight:700;text-decoration:none;font-size:13.5px">Full governance</a>
 </div>
 
-<div style="text-align:center;margin:30px auto 0;max-width:820px">
-<a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=idea_submission.yml" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:16px;text-decoration:none;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;box-shadow:0 8px 26px rgba(189,156,97,0.35)">Submit an idea</a>
-<a href="https://github.com/Hidden-Alchemy/.github/issues/new?template=bug_report.yml" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.55);color:rgba(76,107,92,1)">Report a bug</a>
-<a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=project_proposal.yml" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.55);color:rgba(76,107,92,1)">Propose a system</a>
-<a href="https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.55);color:rgba(76,107,92,1)">Docs fix</a>
 </div>
 
-<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
-<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">05</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">OPERATING CODE</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">Organization Principles</div>
-</div>
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
 
-<div style="text-align:center;margin:30px auto 0;max-width:980px">
-<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(189,156,97,1)">i</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Build, Don't Perform</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">What works matters more than what looks good in a demo.</div></div>
-<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">ii</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Complexity Becomes Invisible</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Good engineering hides unnecessary complexity from the user.</div></div>
-<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">iii</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Automation Creates Leverage</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Automate what shouldn't - need human repetition.</div></div>
-<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">iv</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Design Is Part of Engineering</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">A technically correct system can still be a bad product.</div></div>
-<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(189,156,97,1)">v</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Experiment Relentlessly</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Prototype, break, measure, refine — record the outcome honestly.</div></div>
-<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">vi</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Details Compound</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Small decisions become large differences when repeated.</div></div>
-</div>
+<div align="center" style="font-size:12px;color:rgba(110,119,129,1)">
 
-<div style="text-align:center;margin:84px auto 0;max-width:900px;padding:28px">
-<div style="background:linear-gradient(160deg,rgba(76,107,92,0.2),rgba(189,156,97,0.14) 55%,rgba(140,150,160,0.04));border:1px solid rgba(76,107,92,0.4);border-radius:28px;padding:52px 30px">
-<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">06</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">JOIN THE LAB</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:32px;letter-spacing:-0.02em;margin:20px auto 0;max-width:700px">Membership is earned through contribution,<br><span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;color:rgba(76,107,92,1)">never requested on demand.</span></div>
-<div style="font-size:16.5px;line-height:1.8;color:rgba(110,119,129,1);max-width:660px;margin:20px auto 0">Anyone can contribute to this lab without ever becoming a member. When you qualify — <span style="color:rgba(76,107,92,1);font-weight:700">3+ accepted contributions over a month</span> and a <span style="color:rgba(76,107,92,1);font-weight:700">Recognized Contributor</span> badge — a human maintainer reviews and records the decision.</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:2px;color:rgba(140,149,159,1);margin:20px auto 0">INVITATIONS ARE ALWAYS SENT MANUALLY — NEVER BY AUTOMATION</div>
-<div style="margin-top:26px">
-<a href="https://github.com/Hidden-Alchemy/community/issues/new?template=membership_interest.yml" style="display:inline-block;padding:16px 34px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:16.5px;text-decoration:none;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;box-shadow:0 10px 28px rgba(76,107,92,0.4)">Apply for membership</a>
-<a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md" style="display:inline-block;padding:16px 34px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16.5px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.6);color:rgba(76,107,92,1);margin-left:10px">Read governance</a>
-</div>
-</div>
-</div>
+<span style="display:inline-block;border:1px solid rgba(140,150,160,0.3);border-radius:999px;padding:5px 14px;margin:3px"><a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none">ideas</a></span>
+<span style="display:inline-block;border:1px solid rgba(140,150,160,0.3);border-radius:999px;padding:5px 14px;margin:3px"><a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none">community</a></span>
+<span style="display:inline-block;border:1px solid rgba(140,150,160,0.3);border-radius:999px;padding:5px 14px;margin:3px"><a href="https://github.com/orgs/Hidden-Alchemy/projects/1" style="text-decoration:none">idea board</a></span>
+<span style="display:inline-block;border:1px solid rgba(140,150,160,0.3);border-radius:999px;padding:5px 14px;margin:3px"><a href="https://github.com/Hidden-Alchemy/.github" style="text-decoration:none">.github</a></span>
 
-<div style="text-align:center;margin:70px auto 0;max-width:700px;padding:0 12px">
-<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.6),rgba(76,107,92,0.6),transparent);border-radius:2px"></div>
-<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:17px;color:rgba(189,156,97,1);margin-top:22px">raw ideas, forged publicly</div>
-<div style="font-family:Menlo,Consolas,monospace;font-size:12px;color:rgba(140,149,159,1);margin-top:14px"><a href="https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">contribute</a>· <a href="https://github.com/Hidden-Alchemy/.github/blob/main/CODE_OF_CONDUCT.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">conduct</a>· <a href="https://github.com/Hidden-Alchemy/.github/blob/main/SECURITY.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">security</a>· <a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">governance</a></div>
+<div style="margin-top:10px;font-size:11.5px;color:rgba(154,164,175,1)">This profile is intentionally honest about the current state of the lab — infrastructure first, projects as they become real.</div>
+
+<div style="margin-top:8px;font-size:11px;letter-spacing:1px;color:rgba(154,164,175,1)">HIDDEN ALCHEMY · RAW IDEAS, FORGED PUBLICLY</div>
+
 </div>
