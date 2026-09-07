@@ -141,20 +141,25 @@ This process was exercised end-to-end in a dry run during milestone M7.
 - Permitted automation around membership is strictly labelling, comments, and
   reminders — nothing that changes membership state.
 
-## Future expansion triggers
+## Appendix — Future Expansion Triggers
 
-These thresholds are recorded now and acted upon only when reached (finalized
-as an appendix at milestone M10):
+Finalized at M10. These thresholds relax the current-scale restrictions
+(PRD NG1 domain-team limit, §33 lightweight governance, §12 single-flagship
+limit). They are **recorded, not acted upon now** — no change is triggered
+until the stated condition is met.
 
-- **Domain teams** (AI, Design, Research) exist when a specific active project
-  has ≥2 people actively working in that domain — and are created as
-  project-scoped teams, not domain-wide teams.
-- **Formal RFC/voting governance** is revisited when the Core Team exceeds
-  roughly 5 people.
-- **A second flagship project** is considered only after the first flagship
-  reaches genuine `stable` or `maintained` status.
-- **Mentorship program** is considered when sustained `good first issue`
-  volume justifies it.
+| Restriction relaxed | Trigger (concrete) | Action when reached |
+|---|---|---|
+| NG1 domain-team restriction (§22) | A specific active non-flagship project has ≥2 people who are **sustained-active contributors** (≥3 contributions spanning ≥1 month, per the Recognized Contributor bar) in the same domain | Create a **project-scoped** team for that project and add them |
+| §33 lightweight-governance (no formal RFC/voting) | Core Team exceeds **5 people** | Define formal leadership-transition and RFC/voting rules, reviewed by the Owner |
+| §33 lightweight-governance (sole-owner vote tiebreak) | Core Team exceeds **3 people** | Define consensus → voting fallback rules short of full RFC process |
+| §12 single-flagship limit | First flagship reaches genuine `stable` **or** `maintained` status for one full quarterly review cycle (§38) | A second flagship project may be proposed via the §23 pipeline |
+| §21 membership recognition ledger | First real (non-dry-run) Community Member ships onboarding checklist OR ≥3 Recognized Contributors exist | Extend the membership/recognition process only if Core Team confirms demand |
+| Mentorship program | Sustained `good first issue` volume: ≥4 per quarter for two consecutive quarters with ≥1 cleared each quarter | Core Team may start a lightweight mentorship offering |
+| `enforce_admins` on branch protection | A second Core Team reviewer exists (Core Team >1) | Core Team may flip `enforce_admins: true` on protected branches (§31) |
+
+All triggers require a manual Core Team decision; automation never promotes a
+status change on its own.
 
 ## Known current-scale limitation
 

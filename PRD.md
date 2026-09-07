@@ -144,6 +144,7 @@ Legend: **NOW** = create in this PRD's scope · **LATER** = defined but not crea
 | `projects` (meta index) | Public | **DO NOT CREATE** | Rejected: redundant with the org profile README's "Active Systems" section, which will list real project repos directly. A meta-index repo with no code is exactly the "empty repository" anti-pattern this PRD prohibits. |
 | `<flagship-project-name>` | Public | **LATER**, scaffolded in M9 | The one flagship project proving the pipeline (see §19/M9) |
 | `.github-private` (org-internal ops, e.g. membership review notes) | Private | **LATER** | Only created if/when membership review needs a private tracking surface beyond issue forms with restricted visibility. Not required for MVP since GitHub Issue Forms in `community` can be configured with appropriate visibility. |
+| `demo-repository` | Private | **NOW** | **Recorded by M10 health sweep:** pre-existing private repository used by the Organization Owner for personal/scratch experimentation. Outside the public lab scope; does not affect public appearance or the §12 architecture. Kept private; not counted in public repo metrics. |
 
 **Rule enforced across all repositories:** no repository is created without (a) a named owner/maintainer, (b) a defined purpose recorded in this table or a future PRD amendment, and (c) required baseline files (LICENSE, README following the design system in §15, CODEOWNERS where applicable).
 
