@@ -94,10 +94,9 @@ jobs:
               return any(marker in c.get("body", "") for c in body)
 
           seen_would = 0
-          # Issues (includes PRs' meta? no — issues endpoint excludes PRs on GitHub; but
-          # "issues" API includes PRs if they have issue-like numbers. Use it, skip PRs via pull_request field.)
+          # NOTE: `gh issue list` already excludes pull requests — no PR filter needed.
           issues = json.loads(gh("issue", "list", "--state", "open", "--limit", "300",
-                                "--json", "number,updatedAt,labels,pullRequest"))
+                                "--json", "number,updatedAt,labels"))
           pull_requests = json.loads(gh("pr", "list", "--state", "open", "--limit", "300",
                                        "--json", "number,updatedAt"))
 
@@ -106,8 +105,6 @@ jobs:
 
           # 1) Membership-interest: 21-day rule (§20) -> comment + @core ping
           for it in issues:
-              if it.get("pullRequest"):
-                  continue
               labs = labels_of(it)
               if "membership:needs-review" not in labs:
                   continue
@@ -124,8 +121,6 @@ jobs:
 
           # 2) Stale: 60-day rule -> single neutral comment, never close
           for it in issues:
-              if it.get("pullRequest"):
-                  continue
               age = days_since(it["updatedAt"])
               if age < stale_days or already_commented(it["number"], False):
                   continue
