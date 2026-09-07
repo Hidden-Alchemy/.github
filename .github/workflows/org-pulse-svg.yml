@@ -1,0 +1,42 @@
+name: org-pulse
+
+# §29 org-pulse — regenerates the live "org pulse" SVG from the public API.
+# Trusted triggers only (schedule / manual). No secrets, no third-party actions
+# beyond the SHA-pinned checkout. Output is pushed to the unprotected `pulse`
+# branch (single artifact), never to main — branch protection stays intact.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"   # daily 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: org-pulse
+  cancel-in-progress: false
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Render org pulse SVG
+        env:
+          PULSE_STAGE: concept
+        run: python3 scripts/org-pulse.py assets/svg/org-pulse.svg
+
+      - name: Publish to pulse branch (single artifact, force-refreshed)
+        shell: bash
+        run: |
+          git config user.name "hidden-alchemy-pulse[bot]"
+          git config user.email "action@hidden-alchemy.github"
+          git checkout --orphan pulse
+          git read-tree --empty
+          git add assets/svg/org-pulse.svg
+          git commit -m "pulse: refresh org snapshot"
+          git push origin pulse --force
+          echo "pulse branch refreshed"
