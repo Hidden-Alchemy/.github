@@ -1,0 +1,159 @@
+# §29 stale-triage — labels stale issues/PRs (60 days, no activity) and flags
+# membership-interest requests that have sat unreviewed (21 days, per §20).
+# This workflow NEVER closes anything — auto-close is deliberately excluded.
+#
+# Reconciliation note (logged, M4): §29 says "status:stale-equivalent
+# label/comment", while §25's taxonomy is final with no extras and contains no
+# `status:stale` label. The status signal is therefore delivered as a COMMENT
+# (the "equivalent" signal), not a new label, preserving the taxonomy exactly.
+# A membership issue additionally gets a single @Hidden-Alchemy/core ping.
+#
+# Security (per §29/§30): trusted/internal trigger (schedule — not untrusted
+# public input); permissions issues/PRs write only; no secrets; no checkout;
+# no third-party actions. It only posts comments and never closes or relabels.
+#
+# Dry-run sequencing (per Task 4.4.1): the schedule trigger is COMMENTED OUT
+# until a dry-run has been manually reviewed at sign-off. Until then the
+# workflow is driven explicitly via workflow_dispatch (dry_run=true first).
+
+name: Stale triage
+
+on:
+  # schedule:
+  #   - cron: "17 3 * * *"   # daily 03:17 UTC — enable ONLY after dry-run sign-off
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Report only — never post comments"
+        type: boolean
+        default: true
+      stale_days:
+        description: "Stale threshold in days (default 60)"
+        type: number
+        default: 60
+      membership_days:
+        description: "Membership-review threshold in days (default 21)"
+        type: number
+        default: 21
+
+permissions:
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: stale-triage
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Triage stale issues and PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PROMPT_DISABLED: "1"
+          DRY_RUN: ${{ inputs.dry_run }}
+          STALE_DAYS: ${{ inputs.stale_days }}
+          MEMBERSHIP_DAYS: ${{ inputs.membership_days }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import datetime as dt, json, os, subprocess, sys
+
+          repo = os.environ["GITHUB_REPOSITORY"]
+          dry_run = os.environ.get("DRY_RUN", "true").lower() == "true"
+          stale_days = int(os.environ.get("STALE_DAYS", "60"))
+          mem_days = int(os.environ.get("MEMBERSHIP_DAYS", "21"))
+          now = dt.datetime.now(dt.timezone.utc)
+          marker = "<!-- stale-triage -->"
+
+          def gh(*args):
+              p = subprocess.run(["gh", *args], capture_output=True, text=True)
+              if p.returncode != 0:
+                  raise SystemExit(f"gh {' '.join(args)} failed: {p.stderr}")
+              return p.stdout
+
+          def gh_api(method, path, payload=None):
+              cmd = ["gh", "api", "-X", method, f"{repo}/{path}"]
+              if payload is not None:
+                  cmd += ["--input", "-"]
+                  p = subprocess.run(cmd, input=json.dumps(payload),
+                                     capture_output=True, text=True)
+              else:
+                  p = subprocess.run(cmd, capture_output=True, text=True)
+              if p.returncode != 0:
+                  raise SystemExit(f"gh api {method} {path} failed: {p.stderr}")
+              return json.loads(p.stdout)
+
+          def days_since(ts):
+              t = dt.datetime.fromisoformat(ts.replace("Z", "+00:00"))
+              return (now - t).days
+
+          def already_commented(number, is_pr):
+              body = gh_api("GET", f"issues/{number}/comments")
+              return any(marker in c.get("body", "") for c in body)
+
+          seen_would = 0
+          # Issues (includes PRs' meta? no — issues endpoint excludes PRs on GitHub; but
+          # "issues" API includes PRs if they have issue-like numbers. Use it, skip PRs via pull_request field.)
+          issues = json.loads(gh("issue", "list", "--state", "open", "--limit", "300",
+                                "--json", "number,updatedAt,labels,pullRequest"))
+          pull_requests = json.loads(gh("pr", "list", "--state", "open", "--limit", "300",
+                                       "--json", "number,updatedAt"))
+
+          def labels_of(item):
+              return [l["name"] for l in item.get("labels", [])]
+
+          # 1) Membership-interest: 21-day rule (§20) -> comment + @core ping
+          for it in issues:
+              if it.get("pullRequest"):
+                  continue
+              labs = labels_of(it)
+              if "membership:needs-review" not in labs:
+                  continue
+              age = days_since(it["updatedAt"])
+              if age < mem_days or already_commented(it["number"], False):
+                  continue
+              seen_would += 1
+              body = (marker + "\n\nThis membership-interest request has had no "
+                      "maintainer decision for **21 days** (per §20 of the PRD). "
+                      "Pinging **@Hidden-Alchemy/core** for review. It is never "
+                      "auto-approved or auto-declined.")
+              if not dry_run:
+                  gh("issue", "comment", str(it["number"]), "--body", body)
+
+          # 2) Stale: 60-day rule -> single neutral comment, never close
+          for it in issues:
+              if it.get("pullRequest"):
+                  continue
+              age = days_since(it["updatedAt"])
+              if age < stale_days or already_commented(it["number"], False):
+                  continue
+              seen_would += 1
+              body = (marker + "\n\nNo activity in 60 days. No action is taken "
+                      "automatically — this is an open question for its owner or "
+                      "any maintainer: **keep, move, or archive this issue**? "
+                      "Nothing here is closed by automation.")
+              if not dry_run:
+                  gh("issue", "comment", str(it["number"]), "--body", body)
+
+          # 3) Stale PRs: 60-day rule -> same neutral comment
+          for pr in pull_requests:
+              age = days_since(pr["updatedAt"])
+              if age < stale_days or already_commented(pr["number"], True):
+                  continue
+              seen_would += 1
+              body = (marker + "\n\nNo activity in 60 days. This PR is not closed "
+                      "automatically — it needs a maintainer decision (merge, "
+                      "request changes, or close).")
+              if not dry_run:
+                  gh("api", "-X", "POST", f"issues/{pr['number']}/comments",
+                     payload={"body": body})
+
+          verb = "would have pinged/noted" if dry_run else "pinged/noted"
+          print(f"[stale-triage] {verb} {seen_would} item(s) needing attention "
+                f"(stale={stale_days}d threshold, membership={mem_days}d threshold)")
+          if seen_would > 0 and dry_run:
+              print("[stale-triage] DRY RUN — no comments were posted. Review the "
+                    "above list before enabling the schedule trigger.")
+          PY

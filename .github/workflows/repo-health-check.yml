@@ -1,0 +1,107 @@
+# §29 repo-health-check — scans the default branch for the four required
+# community-health signals and reports a pass/fail status check.
+#
+#   Missing LICENSE                    -> fail
+#   README.md missing / placeholder    -> fail
+#   README.md missing §24 status line  -> fail
+#   SECURITY.md missing                -> fail
+#
+# Trigger: push to main (default branch) and pull_request. Runs on the
+# integration ref. This workflow NEVER checks out a fork's branch with
+# elevated rights and NEVER writes repository contents.
+#
+# Security (per §29/§30): permissions `contents: read` + `checks: write` only
+# (exactly as §29 documents); no secrets; no pull_request_target;
+# actions/checkout@<full-commit-SHA> pinned. The check's only side effect is a
+# status check (pass/fail) — explicitly not a merge gate unless a repo's §31
+# maturity tier makes it one.
+
+name: Repo health check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+  checks: write
+
+concurrency:
+  group: health-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - name: Run the four health checks
+        id: checks
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PROMPT_DISABLED: "1"
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          set -u
+          problems=()
+          notes=()
+
+          [ -f LICENSE ] || problems+=("LICENSE is missing")
+          if [ ! -f README.md ]; then
+            problems+=("README.md is missing")
+          else
+            if grep -qiE "TODO|placeholder|TBD|coming soon" -- README.md; then
+              problems+=("README.md contains TODO/placeholder/TBD text")
+            fi
+            if ! grep -qiE "status:[[:space:]\`]*[[:space:]]*(concept|research|experiment|prototype|active|stable|maintained|archived)" -- README.md; then
+              problems+=("README.md lacks a §24 status line ('Status: <concept|research|experiment|prototype|active|stable|maintained|archived>')")
+            fi
+          fi
+          [ -f SECURITY.md ] || problems+=("SECURITY.md is missing")
+
+          conclusion="success"
+          title="All four health signals present"
+          summary="LICENSE ✓ / README ✓ / §24 status line ✓ / SECURITY.md ✓"
+          if [ ${#problems[@]} -gt 0 ]; then
+            conclusion="failure"
+            title="Health check failed"
+            summary="- $(printf '%s\\n- ' "${problems[@]}")"
+            summary="${summary%- }"
+          fi
+
+          python3 - "$HEAD_SHA" "$conclusion" "$title" "$summary" <<'PY'
+          import json, os, subprocess, sys
+          head_sha, conclusion, title, summary = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+          body = {
+            "name": "repo-health-check",
+            "head_sha": head_sha,
+            "status": "completed",
+            "conclusion": conclusion,
+            "output": {"title": title, "summary": summary},
+            # no annotations on line-level: this is a repo-wide structural check
+          }
+          proc = subprocess.run(
+            ["gh", "api", "-X", "POST",
+             f"repos/{os.environ['GITHUB_REPOSITORY']}/check-runs",
+             "--input", "-"],
+            input=json.dumps(body), capture_output=True, text=True,
+            env=dict(os.environ, GH_TOKEN=os.environ["GH_TOKEN"]))
+          if proc.returncode != 0:
+              print("check-run create failed:", proc.stderr, file=sys.stderr)
+              sys.exit(proc.returncode)
+          PY
+
+          {
+            echo "## Repo health check: ${title}"
+            echo
+            echo "${summary}"
+            echo
+            echo "_Detected problems are listed; this check does not block merges unless this repo's §31 tier requires it._"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ ${#problems[@]} -gt 0 ]; then
+            echo "reporting failure: ${problems[@]}"
+            exit 1
+          fi
+          echo "reporting success: $summary"

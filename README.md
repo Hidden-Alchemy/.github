@@ -1,5 +1,9 @@
 # Hidden Alchemy — `.github`
 
+Status: `active` — org infrastructure, maintained continuously. If this
+repository's maintenance stops, its README status key must be updated per §24
+_lifecycle statuses_ — never left silently behind.
+
 This repository holds the organization-wide configuration and community health
 files for the **Hidden Alchemy** GitHub organization. It is not a product
 repository; it is the infrastructure that makes the rest of the organization

@@ -1,0 +1,64 @@
+# §29 welcome-first-interaction — posts a single, non-generic welcome comment
+# on a user's first issue/PR in this repository.
+#
+# Security (per §29/§30.4/§30.5, verified at creation — M4):
+#   - permissions: issues: write, pull-requests: write ONLY (minimal)
+#   - NO checkout step, NO secrets, NO pull_request_target (we never check out
+#     untrusted code with elevated rights; a comment needs only the token)
+#   - actions/first-interaction@<full-commit-SHA> (pinned, not a tag)
+#
+# Trust level: untrusted input (any public user). Never posts more than once
+# per person per repository (the action checks prior interactions via API).
+
+name: Welcome first interaction
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: welcome-${{ github.event_name }}
+  cancel-in-progress: false
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/first-interaction@1c4688942c71f71d4f5502a26ea67c331730fa4d # v3.1.0
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          issue_message: |
+            Welcome to Hidden Alchemy — this looks like your first issue here.
+
+            Every issue sits somewhere in the lab's pipeline
+            (IDEA → CONCEPT → ARCHITECTURE → SYSTEM → AUTOMATION → REALITY), and
+            the label on this issue tells you where. If it carries a
+            `good first issue` label it is scoped to under a day with a
+            testable acceptance criterion in the body.
+
+            Before you start:
+            - How to contribute: https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md
+            - Community standards: https://github.com/Hidden-Alchemy/.github/blob/main/CODE_OF_CONDUCT.md
+
+            If you intend to work on this issue, say so here first — that keeps
+            collisions public instead of silent.
+          pr_message: |
+            Welcome to Hidden Alchemy — thanks for opening your first pull request here.
+
+            The merge bar is deliberately light:
+            - fill in the PR template's checklist (linked issue or a stated
+              justification, summary, testing performed, docs impact, and a
+              screenshot for any visual change)
+            - a maintainer reviews and approves; there is no hidden CI gate
+            - small documentation fixes don't need pre-approval
+
+            First-time pipeline: https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md
+            Community standards: https://github.com/Hidden-Alchemy/.github/blob/main/CODE_OF_CONDUCT.md
+
+            Accepted? Your handle also lands in the org recognition log.

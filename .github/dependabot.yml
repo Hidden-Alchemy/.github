@@ -1,0 +1,14 @@
+# §30.6 Dependabot — keeps the SHA pins in the org's workflows current via
+# reviewed pull requests. Dependabot only *proposes*; a human merges.
+#
+# labels deliberately empty per §25's "no extras" taxonomy — Dependabot applies
+# no sticker rather than inventing one that would violate the label set.
+
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels: []
+    open-pull-requests-limit: 3

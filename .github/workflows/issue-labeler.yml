@@ -1,0 +1,56 @@
+# §29 issue-labeler — applies the correct type/status labels based on which
+# Issue Form produced the issue (§26 mapping).
+#
+# Behavior (per §29 + Task 4.2.1):
+#   - GitHub Issue Forms already apply their `labels:` automatically at submit
+#     time; this workflow is the safe no-op/idempotent path for those cases
+#     (known type label present -> do nothing).
+#   - For issues WITHOUT a known type label (API-created, blank, or a form we
+#     don't map), it falls back silently to `status:triage` ONLY and logs a
+#     warning to the workflow run log — it never fails loudly on the author.
+#   - Note: GitHub does not surface a reliable form-ID to workflow payloads,
+#     so the mapping is derived from the emitted labels, not a form-ID field.
+#
+# Security (per §29/§30): permissions `issues: write` only; no secrets; no
+# checkout; no third-party actions (plain gh CLI, preinstalled on runners).
+
+name: Issue labeler
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+concurrency:
+  group: labeler-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply safe fallback labels
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PROMPT_DISABLED: "1"
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          set -euo pipefail
+          existing=$(gh api "repos/$GITHUB_REPOSITORY/issues/$ISSUE/labels" --jq '.[].name')
+          known_types="type:bug type:feature type:documentation type:design type:research type:experiment type:architecture type:idea"
+          has_type=false
+          for t in $known_types; do
+            if printf '%s\n' "$existing" | grep -qx "$t"; then has_type=true; fi
+          done
+          if [ "$has_type" = true ]; then
+            echo "::notice::issue #$ISSUE already carries a §26 type label (form mapping applied at submit). No action."
+            exit 0
+          fi
+          # Unknown form / blank issue: never surface an error to the author.
+          if ! printf '%s\n' "$existing" | grep -qx "status:triage"; then
+            gh api -X POST "repos/$GITHUB_REPOSITORY/issues/$ISSUE/labels" \
+              -f labels[]=status:triage >/dev/null
+          fi
+          echo "::warning::issue #$ISSUE had no recognized §26 type label; applied status:triage only (brew/view on the labeler run log)."
