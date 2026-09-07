@@ -1,0 +1,32 @@
+name: Project Proposal
+description: Graduate an accepted idea to the Architecture stage with a written plan (used at ARCHITECTURE, not for brand-new raw ideas).
+title: "[Proposal]: "
+labels:
+  - type:architecture
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A Project Proposal is not a raw idea — it is an idea that already went through triage and has a real owner. Write the architecture down *before* code is written. See CONTRIBUTING.md for the ARCHITECTURE stage expectations.
+  - type: input
+    id: idea_link
+    attributes:
+      label: Links back to an accepted idea
+      description: The Issue URL of the accepted Idea Submission this proposal builds on.
+      placeholder: "https://github.com/Hidden-Alchemy/ideas/issues/123"
+    validations:
+      required: true
+  - type: textarea
+    id: architecture
+    attributes:
+      label: Architecture sketch
+      description: The shape of the system before its code — components, data flow, boundaries, what is deliberately out of scope. Enough that someone else can sanity-check the design without reading the code.
+    validations:
+      required: true
+  - type: textarea
+    id: commitment
+    attributes:
+      label: Maintainer commitment
+      description: Who is carrying this, at what cadence, and for what minimum milestone? A proposal without owner commitment stays at ARCHITECTURE.
+    validations:
+      required: true

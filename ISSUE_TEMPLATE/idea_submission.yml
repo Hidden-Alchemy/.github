@@ -1,0 +1,42 @@
+name: Idea Submission
+description: "Submit a raw idea to feed the Hidden Alchemy pipeline (canonical home: the `ideas` repo, created in M5)."
+title: "[Idea]: "
+labels:
+  - type:idea
+  - status:triage
+  - project-proposal
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An idea is a hypothesis, not a promise. Every project in this org starts as one of these. Maybe it becomes a research proposal, maybe a project proposal, maybe a recorded dead end — the process decides, not the person submitting.
+  - type: input
+    id: oneliner
+    attributes:
+      label: One-line idea
+      description: The whole idea in a single sentence.
+      placeholder: "e.g. A self-hosted inventory tracker for a small workshop."
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it solves
+      description: What pain or inefficiency does this address, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why Hidden Alchemy
+      description: What makes this lab the right place for it? Connect it to the org's domain (Frappe/ERPNext, AI & automation, engineering craft) or its pipeline.
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: Rough scope
+      description: A rough sense of size and steps. Honesty over precision.
+      placeholder: "e.g. A single maintainable script-engine + UI, ~3 months part-time"
+    validations:
+      required: true

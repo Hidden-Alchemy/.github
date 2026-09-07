@@ -1,0 +1,31 @@
+name: Research Proposal
+description: Investigate a question before committing to build something.
+title: "[Research]: "
+labels:
+  - type:research
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Research here means a question, a method, and a deliverable — not "let's see what happens". A maintainer confirms the scope before deep work begins, so nobody spends a week on a question the lab has already answered.
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: The specific, answerable question. If it cannot be closed by a concrete result, it is not a research question yet.
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: Method
+      description: How the question will be answered — experiments, benchmarks, literature, prototypes, and their criteria for 'answered'.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Expected output
+      description: The deliverable — a written finding, a comparison table, a decision record, a measurement. If it cannot be named, the method is not sharp enough yet.
+    validations:
+      required: true

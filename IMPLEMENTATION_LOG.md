@@ -374,3 +374,120 @@ _End of M2 entry._
 - #3 Teams — RESOLVED (M1).
 - #4 Verdigris / brand — RESOLVED in this milestone (owner logo directive +
       Verdigris adopted as accent). Closed.
+
+---
+
+## M3 — Contribution Infrastructure
+
+**Date:** 2026-09-07
+**Objective:** Make the first contribution possible end-to-end — CONTRIBUTING.md,
+org-wide issue forms, the §25 label taxonomy, and the PR template.
+**Prerequisite:** M2 signed off (owner directive to continue received as "continue").
+
+### Phase 3.1 — Labels (Task 3.1.1) ✅
+
+Applied the exact §25 taxonomy to `Hidden-Alchemy/.github` (org-wide fallback repo)
+via `gh api`. All 24 labels, no extras; one color family per facet:
+
+| Facet | Colors | Labels |
+|---|---|---|
+| Difficulty | blue tones | `good first issue` `#1F6FEB`, `help wanted` `#0969DA` |
+| Type | purple tones | `type:bug` `#8250DF` `type:feature` `#A371F7` `type:documentation` `#BC8CFF` `type:design` `#C297FF` `type:research` `#6E40C9` `type:experiment` `#8957E5` `type:architecture` `#8A63D2` `type:idea` `#D2A8FF` |
+| Priority | red→orange→yellow→green | `priority:critical` `#D1242F` `priority:high` `#F97316` `priority:medium` `#FACA15` `priority:low` `#2DA44E` |
+| Status | gray→green (+warn end) | `status:triage` `#57606A` `status:planned` `#6E7781` `status:in-progress` `#1A7F37` `status:review` `#4A9E77` `status:blocked` `#9E6A03` |
+| Community | gold tones | `membership:approved` `#B07C3C` `membership:declined` `#9A6700` `membership:deferred` `#C08A2E` `membership:needs-review` `#BF8700` `project-proposal` `#8F6F19` |
+
+- Deleted the 8 non-§25 GitHub default labels from `.github` (`bug`,
+  `documentation`, `duplicate`, `enhancement`, `invalid`, `question`, `wontfix`,
+  `accessibility`). **Cross-section note (logged):** §17's entry-point table
+  names bare `documentation`/`design` labels; those are shorthand for the §25
+  `type:documentation`/`type:design` labels — §25 is the final taxonomy and its
+  "no repo-local label sets" rule wins. No bare labels remain.
+- Label plumbing verified live: test issue `#1` created with the bug form's
+  auto-labels → confirmed `type:bug` + `status:triage` applied → closed with a
+  comment. (Issue #1 is also the org tracker's first issue.)
+- Org-wide propagation caveat recorded: GitHub does not retro-apply label sets
+  to repos; ideas/`community` repos get the same 24 labels scripted at M5.
+
+### Phase 3.2 — Issue Forms ✅
+
+- **Task 3.2.1 `ISSUE_TEMPLATE/config.yml`** — `blank_issues_enabled: false`;
+  one contact link → Discussions Help. ✔
+- **Tasks 3.2.2–3.2.7** — all six §26 forms written as native GitHub Issue Form
+  YAML and validated (PyYAML parse + field/required mapping + labels
+  cross-checked against the live label set):
+  - `bug_report.yml` ✓ Summary/Steps/Expected-vs-actual/Repo-version all
+    required → `type:bug`,`status:triage`
+  - `feature_request.yml` ✓ Problem/Proposed solution/Alternatives →
+    `type:feature`,`status:triage`
+  - `idea_submission.yml` ✓ One-line idea/Problem/Why Hidden Alchemy/Rough
+    scope → `type:idea`,`status:triage`,`project-proposal` (drafted here;
+    canonical home `ideas` repo at M5)
+  - `project_proposal.yml` ✓ Accepted-idea link/Architecture sketch/Commitment →
+    `type:architecture`
+  - `research_proposal.yml` ✓ Question/Method/Expected output → `type:research`
+  - `membership_interest.yml` ✓ Handle/Contributions-with-links/Areas/GOVERNANCE
+    checkbox → `membership:needs-review` (canonical home `community` repo at M5)
+- Copy plan for M5 recorded: GitHub requires forms to live in the repo they
+  apply to; `.github` org-wide fallback only covers repos with no local
+  template. idea/membership forms move to `ideas`/`community` at M5 Phase 5.x.
+- Required-field **enforcement** is client-side (UI) — YAML `validations.required`
+  flags verified structurally; live UI block-test deferred to Manual QA.
+
+### Phase 3.3 — CONTRIBUTING.md ✅
+
+- Written covering: the pipeline identity (IDEA→…→REALITY); the "membership is
+  separate from contributing" rule up front (§19 canonical language); the full
+  §17 entry-point table (8 routes, first action each); §25 label taxonomy in
+  plain language (one Type per issue, one Status after triage, Priority/Difficulty
+  are human-only); the idea→proposal pipeline route (IDEA→CONCEPT→ARCHITECTURE);
+  §28 PR expectations; recognition/membership next-steps w/ GOVERNANCE link; the
+  lab's honest-failure principle. Links verified (relative paths resolve).
+- §26 forms + profile README links to CONTRIBUTING.md now resolve once this
+  commit is pushed — **closing M2's logged known limitation** (ideas/community
+  form links remain pending M5, already logged).
+
+### Phase 3.4 — PR Template ✅
+
+- `PULL_REQUEST_TEMPLATE.md` at repo root (org-wide fallback for all repos): all
+  five §28 items — Linked issue (or explicit no-linked-issue w/ justification),
+  Summary of change, Testing performed, Documentation impact, Visual change
+  (screenshot required). (PRD's checklist text says "four items" but §28 lists
+  five — five implemented, spec is authoritative; noted.)
+- Default-PR-body rendering is client-side → deferred to Manual QA
+  (open a test PR with no body on a scratch branch).
+
+### M3 Verification & Tests Run
+
+- PyYAML parse of config + all six forms: PASS. Required-field mapping per §26:
+  PASS. Form label sets == live label set subset: PASS.
+- Live issue flow: created issue #1 with bug-form auto-labels, verified
+  `type:bug`/`status:triage` present, closed cleanly. PASS.
+- Label set: exactly 24 labels (count + name diff vs §25): PASS, no extras.
+- Refs: all relative links in CONTRIBUTING.md exist on disk; post-push URL check
+  queued after this commit.
+- **Manual QA (human):** full first-time-contributor simulation — open each of
+  the six forms as a test and confirm required-field blocking + coherent
+  experience; confirm the PR template pre-fills as the default PR body.
+
+### M3 Completion Checklist
+
+- [x] All 24 §25 labels present, no extras, family colors documented
+- [x] config.yml + 6 forms complete, structure/required/labels verified
+- [x] CONTRIBUTING.md written (entry points, labels, PR expectations,
+      membership-separate language, all internal links resolve)
+- [x] PULL_REQUEST_TEMPLATE.md with all §28 checklist items
+- [x] Profile README's CONTRIBUTING + non-ideas form links now resolve
+      (post-push re-verified); ideas/community links tracked to M5
+- [x] Live label-plumbing test (#1) passed
+- [ ] Manual QA: six-form open-and-block simulation + PR template render
+      (human), then explicit sign-off before M4
+
+_End of M3 entry._
+
+### Open Issue status update
+
+- #1 Owners — RESOLVED (M1). #3 Teams — RESOLVED (M1).
+- #2 Private repos — still unconfirmed; reviews requested at M4 (workflows run
+      only on public default repos).
+- #4 Verdigris/brand — RESOLVED (M2).

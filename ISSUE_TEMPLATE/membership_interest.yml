@@ -1,0 +1,43 @@
+name: Membership Interest
+description: "Declare interest in organization membership after demonstrated contribution (canonical home: the `community` repo, created in M5)."
+title: "[Membership]: "
+labels:
+  - membership:needs-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Membership is earned through contribution, not requested on demand — and it is **not required to contribute**. Anyone can contribute publicly. This form is for people who have already become Recognized Contributors and want to go further.
+
+        Review the criteria in GOVERNANCE.md before submitting; the reviewer will check this form against those exact rules.
+  - type: input
+    id: handle
+    attributes:
+      label: GitHub handle
+      description: Your username exactly as it appears on your accepted contributions.
+      placeholder: "e.g. hassan0703"
+    validations:
+      required: true
+  - type: textarea
+    id: contributions
+    attributes:
+      label: Summary of contributions with links
+      description: Your accepted contributions so far, each with a link. Issues or PRs you simply opened do not count on their own — show the accepted work.
+      placeholder: "- PR #42 in Hidden-Alchemy/.github — added the pipeline diagram\n- Issue #17 in Hidden-Alchemy/ideas — accepted idea with follow-through"
+    validations:
+      required: true
+  - type: textarea
+    id: interests
+    attributes:
+      label: Areas of interest
+      description: What do you intend to build or maintain as a member? Vague interest ("I want to help") is not actionable.
+    validations:
+      required: true
+  - type: checkboxes
+    id: read_governance
+    attributes:
+      label: Governance read
+      description: Note that GOVERNANCE.md defines membership levels, the review bar, and the removal criteria.
+      options:
+        - label: I have read GOVERNANCE.md and understand the membership levels, review criteria, and removal criteria.
+          required: true

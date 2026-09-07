@@ -1,0 +1,35 @@
+name: Feature Request
+description: Propose a new capability for an existing Hidden Alchemy system.
+title: "[Feature]: "
+labels:
+  - type:feature
+  - status:triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A feature request is for an existing system this org already runs. For a raw, brand-new idea, use the Idea Submission form in the `ideas` repo instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What need exists that the current system does not meet?
+      placeholder: "e.g. The status labels can only be assigned one at a time, so 'in review' and 'blocked' compete."
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would the change work? Concretely enough to discuss.
+      placeholder: "Describe the behavior change, not just the outcome."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What else was considered, and why is this approach better?
+      placeholder: "What you ruled out and why."
+    validations:
+      required: true
