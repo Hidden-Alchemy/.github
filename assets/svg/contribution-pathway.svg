@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" width="100%" role="img" aria-labelledby="title desc">
+  <title id="title">Hidden Alchemy contribution pathway</title>
+  <desc id="desc">A seven-stage horizontal pathway from Explore, Discuss, Contribute, Collaborate, Recognition, and Trust to Membership Eligibility. The static frame is a complete illustration; slow directional flow dots are the only animation. Colors are chosen to remain legible on both GitHub light and dark backgrounds.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#BD9C61"/>
+    </marker>
+  </defs>
+
+  <!-- connectors -->
+  <g stroke="#4C6B5C" stroke-opacity="0.7" stroke-width="1.5" fill="none">
+    <path d="M104,56 L156,56" marker-end="url(#arrow)"/>
+    <path d="M232,56 L284,56" marker-end="url(#arrow)"/>
+    <path d="M360,56 L412,56" marker-end="url(#arrow)"/>
+    <path d="M488,56 L540,56" marker-end="url(#arrow)"/>
+    <path d="M616,56 L668,56" marker-end="url(#arrow)"/>
+    <path d="M744,56 L796,56" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- flow dots -->
+  <g fill="#BD9C61" fill-opacity="0.55">
+    <circle r="2.5" cy="56"><animate attributeName="cx" values="108;152;108" dur="4.5s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle r="2.5" cy="56"><animate attributeName="cx" values="236;280;236" dur="4.5s" begin="0.75s" repeatCount="indefinite"/></circle>
+    <circle r="2.5" cy="56"><animate attributeName="cx" values="364;408;364" dur="4.5s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="2.5" cy="56"><animate attributeName="cx" values="492;536;492" dur="4.5s" begin="2.25s" repeatCount="indefinite"/></circle>
+    <circle r="2.5" cy="56"><animate attributeName="cx" values="620;664;620" dur="4.5s" begin="3s" repeatCount="indefinite"/></circle>
+    <circle r="2.5" cy="56"><animate attributeName="cx" values="748;792;748" dur="4.5s" begin="3.75s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- stage 1: EXPLORE -->
+  <g>
+    <polygon points="98,56 82,83.7 50,83.7 34,56 50,28.3 82,28.3" fill="none" stroke="#BD9C61" stroke-width="1.5"/>
+    <rect x="22" y="118" width="88" height="26" rx="5" fill="#0B0B0A" fill-opacity="0.8"/>
+    <text x="66" y="134" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">EXPLORE</text>
+  </g>
+
+  <!-- stage 2: DISCUSS -->
+  <g>
+    <polygon points="226,56 210,83.7 178,83.7 162,56 178,28.3 210,28.3" fill="none" stroke="#4C6B5C" stroke-width="1.5"/>
+    <rect x="150" y="118" width="88" height="26" rx="5" fill="#0B0B0A" fill-opacity="0.8"/>
+    <text x="194" y="134" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">DISCUSS</text>
+  </g>
+
+  <!-- stage 3: CONTRIBUTE -->
+  <g>
+    <polygon points="354,56 338,83.7 306,83.7 290,56 306,28.3 338,28.3" fill="none" stroke="#4C6B5C" stroke-width="1.5"/>
+    <rect x="266" y="118" width="112" height="26" rx="5" fill="#0B0B0A" fill-opacity="0.8"/>
+    <text x="322" y="134" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">CONTRIBUTE</text>
+  </g>
+
+  <!-- stage 4: COLLABORATE -->
+  <g>
+    <polygon points="482,56 466,83.7 434,83.7 418,56 434,28.3 466,28.3" fill="none" stroke="#4C6B5C" stroke-width="1.5"/>
+    <rect x="388" y="118" width="124" height="26" rx="5" fill="#0B0B0A" fill-opacity="0.8"/>
+    <text x="450" y="134" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">COLLABORATE</text>
+  </g>
+
+  <!-- stage 5: RECOGNITION -->
+  <g>
+    <polygon points="610,56 594,83.7 562,83.7 546,56 562,28.3 594,28.3" fill="none" stroke="#4C6B5C" stroke-width="1.5"/>
+    <rect x="516" y="118" width="124" height="26" rx="5" fill="#0B0B0A" fill-opacity="0.8"/>
+    <text x="578" y="134" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">RECOGNITION</text>
+  </g>
+
+  <!-- stage 6: TRUST -->
+  <g>
+    <polygon points="738,56 722,83.7 690,83.7 674,56 690,28.3 722,28.3" fill="none" stroke="#4C6B5C" stroke-width="1.5"/>
+    <rect x="670" y="118" width="72" height="26" rx="5" fill="#0B0B0A" fill-opacity="0.8"/>
+    <text x="706" y="134" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="13" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">TRUST</text>
+  </g>
+
+  <!-- stage 7: MEMBERSHIP ELIGIBILITY (two-line label) -->
+  <g>
+    <polygon points="866,56 850,83.7 818,83.7 802,56 818,28.3 850,28.3" fill="none" stroke="#BD9C61" stroke-width="1.5"/>
+    <rect x="776" y="116" width="116" height="40" rx="5" fill="#0B0B0A" fill-opacity="0.8"/>
+    <text x="834" y="132" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">MEMBERSHIP</text>
+    <text x="834" y="148" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, SF Mono, Consolas, monospace" font-size="12" font-weight="600" letter-spacing="1.2" fill="#F3F0E8">ELIGIBILITY</text>
+  </g>
+</svg>

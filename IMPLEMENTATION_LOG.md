@@ -259,3 +259,118 @@ _End of M1 entry. Next milestone: M2 — Identity & Profile Experience.
 - **#2 (Private repos):** Awaiting owner confirmation (owner API can enumerate; see M2 note if relevant); not a blocker for M1.
 - **#3 (Teams):** RESOLVED — `core` (Hassan0703) and `community` (empty) created 2026-09-07 via `gh api`.
 - **#4 (Verdigris color):** Still open for M2 — decision required before visual system work.
+
+---
+
+## M2 — Identity & Profile Experience
+
+**Date:** 2026-09-07
+**Objective:** Ship the organization profile README and its visual assets per §14/§16.
+**Prerequisite:** M1 signed off (recorded above).
+
+### Brand decision recorded (Open Issue #4 resolved)
+
+Owner directive 2026-09-07: the canonical logo set is `assets/logos/*.png`
+(user-provided); the previous SVG logo (`profile/Logo.svg` /
+`profile/assets/logo.svg`) is **not** the brand and was removed (`logo.svg was
+not aligned with my logos`). Adopted assets:
+
+- `logo-black-transparent.png` (gold/cream glyph, transparent) — primary mark for both-mode embedding.
+- `logo-white-transparent.png`, `Hidden-Alchemy-header-logo-*-bg.png`, `Hidden-Alchemy-Logo-200x200-*.png` — mode-specific and avatar-candidate variants.
+
+**Verdigris `#4C6B5C`:** now used as a pipeline accent in the SVG diagrams
+(dark mode contrast verified). The pre-existing live palette (Obsidian/Ivory/
+Gold) remains the base; Verdigris is adopted as an additional accent per the
+PRD, not a replacement of any existing color. No conflicting brand spec was
+found, so no ambiguity remains.
+
+### Phase 2.1 — Visual assets
+
+- **Task 2.1.1 — `assets/svg/hero-pipeline.svg`** (created, 4.6 KB): 6 nodes
+  (IDEA→…→REALITY), Gold/Verdigris accents, hexagon geometry, Bone labels on
+  translucent Ink pills for dual-mode legibility.
+  **Design decision (logged):** these SVGs are embedded via `<img>`, so the
+  hosting page's `currentColor` does not reach inside them. Static dual-mode
+  colors were therefore used instead of `currentColor`, with explicit colors
+  verified against both `#0d1117` and `#ffffff` (headless-Chrome pixel
+  analysis — PASS both modes: labels, gold, verdigris, and pills all present).
+  `<title>`/`<desc>` present; static frame is the first animation frame
+  (node-highlight drift, opacity 0.16→0.40, 7s, staggered). Under 150 KB. ✔
+- **Task 2.1.2 — `assets/svg/contribution-pathway.svg`** (created, 5.2 KB):
+  same structure, 7 stages (EXPLORE→…→MEMBERSHIP ELIGIBILITY). Animation =
+  slow directional flow dots only (the two permitted animated elements in
+  §35). Dual-mode pixel verified PASS both modes. ✔
+- **Task 2.1.3 — `assets/og/org-social-preview.png`** (created, 1280×640,
+  RGBA, 134 KB): generated from `logo-black-transparent.png` + brand text +
+  pipeline line. **Known limitation:** uploaded-to-org-settings cannot be done
+  via API (no public endpoint for org social preview / org avatar) — recorded
+  as a **manual owner action** to complete at sign-off.
+- **Task 2.1.4 — `assets/svg/README.md`** (created): naming convention
+  (kebab-case, purpose-first), raw-URL reference pattern with real example,
+  authoring rules (title/desc, static-frame-as-frame-0, dual-mode color
+  guidance, <150 KB), and the `assets/logos/` catalog with per-logo usage.
+  Logged exception: pre-existing logo filenames keep mixed case (approved
+  deviation from kebab-case).
+
+### Phase 2.2 — Profile README
+
+- **Task 2.2.1 — `profile/README.md`** (REPLACED): legacy 13-section profile
+  (fantasy iconography, third-party services, fabricated `repo-name` table)
+  replaced with the §14-spec 8-section README. Diff review reference: M0 log
+  (legacy content captured) — the old file remains recoverable via git
+  history (commit `40ee3b87` and the M1 `181f1ae` tree).
+  - 8 sections in §14.1 order: Identity Hero (title + positioning + logo +
+    hero-pipeline), The Alchemy Process, What We Build, Active Systems
+    (honest empty state), Experimental Lab (ideas/experiments explained,
+    links land when repos live), How to Participate (pathway + CONTRIBUTING +
+    3 entry forms), Organization Principles (table), Join the Lab (verbatim
+    membership line + eligibility bar + GOVERNANCE link).
+  - Zero external dependencies: only `github.com` and
+    `raw.githubusercontent.com` hosts (verified); no shields.io /
+    capsule-render / typing-svg / singlecolorimage (verified by grep).
+  - No fabricated repos/stats/contributors referenced.
+  - **Known limitation (matches M2 checklist):** links to CONTRIBUTING.md and
+    the bug/idea/proposal forms are written now but resolve only after M3
+    (CONTRIBUTING + forms in `.github`) and M5 (ideas/community repos). Logged,
+    not silently ignored.
+
+### M2 Verification & Tests Run
+
+- Tail of SVGs: XML well-formed (ElementTree), sizes 4.6/5.2 KB (≪150 KB).
+- Dual-mode legibility: headless-Chrome render on `#0d1117` and `#ffffff`,
+  pixel classification for gold/verdigris/text/pills → **all four checks PASS
+  for both SVGs in both modes** (see M2 entry test section for numbers).
+- Profile README structure: all 8 sections present, in §14.1 order (grep on
+  headers).
+- Links: only allowed hosts; all referenced `assets/*` files exist locally
+  (verified path-by-path); banned third-party services absent.
+- Human visual QA (screenshots, both modes, mobile viewport, one-screen hero
+  check): **deferred to human sign-off** — not performable by this agent (no
+  image display capability), and the PRD's Manual QA Requirements designate it
+  as a human review anyway.
+
+### M2 Completion Checklist
+
+- [x] Both SVGs pass their acceptance criteria (size, title/desc, dual-mode
+      pixel verification, static-frame completeness)
+- [x] Profile README passes §14.3 checklist, item for item (see notes):
+      [x] 8 sections present in order; [x] internal link URLs well-formed
+      (resolution dependency on M3/M5 logged); [x] hero SVG dual-mode-verified
+      (human screenshot pending); [x] no fabricated references; [ ] one-screen
+      hero + process (structural estimate OK — human viewport confirmation
+      required); [ ] mobile verified (human required); [x] zero external deps
+- [x] Known limitations logged (link 404s until M3/M5; social-preview upload is
+      a manual owner action; Verdigris decision resolved)
+- [ ] Manual QA: screenshot comparison dark vs. light saved to log — **requires
+      human**; org social preview upload — **requires owner (UI action)**
+- [ ] **Explicit sign-off required before proceeding to M3**
+
+_End of M2 entry._
+
+### Open Issue status update
+
+- #1 Owners — RESOLVED (M1).
+- #2 Private repos — still unconfirmed; not a blocker through M2.
+- #3 Teams — RESOLVED (M1).
+- #4 Verdigris / brand — RESOLVED in this milestone (owner logo directive +
+      Verdigris adopted as accent). Closed.
