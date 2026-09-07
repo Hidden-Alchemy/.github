@@ -1011,3 +1011,88 @@ Active-Project close-with-link transition has not been reached).
 - [ ] Discussions "Project Collaboration" category — owner UI step (M9.4)
 - [x] Health checks green on all four repos; all working trees clean
 - [ ] **Explicit sign-off required before proceeding to M10**
+
+---
+
+## M10 — Organization Health & Scale Review
+
+**Committed:** `.github` push (GOVERNANCE appendix finalized, §12 table amended,
+`templates/.gitkeep` removed).
+
+### Phase 10.1 — Full acceptance sweep (M1–M9, one pass)
+
+Verification performed against the live GitHub state on 2026-09-07:
+
+| M | Sweep result | Evidence |
+|---|---|---|
+| M1 | PASS | `.github` public; LICENSE, root README, profile/README distinguish; structure matches §13 (01 top-level + `.github/` subtrees); CoC/SECURITY/SUPPORT/CONTRIBUTING/PR-template present; `.github/CODEOWNERS` recognized; `core` (Hassan0703) + `community` (empty) teams exist; GOVERNANCE §33 content current. `FUNDING.yml` correctly **omitted** (no funding channel). |
+| M2 | PASS | §14.1 order intact (H1 hero + the 7 sections in exact order); 6 logo PNGs, 2 SVGs + svg README, OG preview present; SVGs 5–6KB each (≪150KB). §14.3 dual-mode visual check = **manual QA carry.** |
+| M3 | PASS | 24-label §25 taxonomy verified on all four public repos; 6 forms + `config.yml` in-place (final homes confirmed); CONTRIBUTING + PR template placeholder-free. |
+| M4 | PASS | 4 workflows + dependabot present in every public repo; stale-triage cron **still dry-run (commented)** awaiting owner default-enable decision; repo-health-check green on all; §30-audit (M8) zero findings unchanged. |
+| M5 | PASS | `community` + `ideas` public with `has_discussions:true`; §34 org-default inheritance verified on new repos (health 100 at creation; `.github` self-check 87 — own-file health, healthy). |
+| M6 | PASS | `ideas#3` real, tracked on Idea Lifecycle board at **Research**; linked to `idea-forge` (M9) and left open. |
+| M7 | PASS | Membership form live with §20 public-visibility line; dry-run cycle closed out; GOVERNANCE membership final. |
+| M8 | PASS | Branch protection GET-verified on `.github` (Critical), `community`/`ideas` (Active), `idea-forge` (Flagship); CODEOWNERS at `.github/CODEOWNERS`; `core` admin on all four. |
+| M9 | PASS | Templates in `.github/templates/` (5 types); `idea-forge` scaffolded per §12.1, protection applied, ideas#3 linked; M9.4 discussion-category = owner UI step still pending. |
+
+**Findings fixed during this sweep (zero regressions besides):**
+- Sprawl: stale root `templates/.gitkeep` (superseded by `.github/templates/` after M9) — **removed.**
+- §12 governance record: unlisted private `demo-repository` (owner scratch, was never in any table/log) — **now recorded** with purpose + reason, satisfying the §12 no-unrecorded-repo rule.
+- Documented deviation reaffirmed: §13's literal `workflows/` executes as `.github/workflows/` (GitHub requirement); functioning correctly, noted in log.
+
+### Phase 10.2 — §38 metrics baseline (first data point, 2026-09-07)
+
+| Metric | Baseline | Note |
+|---|---|---|
+| New first-time contributors / month | **0** | No external contributors yet; welcome-workflow live |
+| Merged PRs / month | **0** | 4 Dependabot "actions/checkout" PRs open awaiting Core review |
+| Idea → Active conversion rate | **0 / 1** | Pipeline has 1 real idea (`ideas#3`, Research); 0 active |
+| Issue response time (first maintainer reply) | **≤ 24h** | All issues (`ideas#2/#3`, `community#2`) answered same-day |
+| Membership requests reviewed within 21 days | **1 / 1 (100%)** | Dry-run reviewed same-day |
+| Active repositories at `active`+ | **3** | `.github`, `community`, `ideas` (honest infra-active); `idea-forge` = `concept` |
+
+Baseline is recorded as data, not interpreted.
+
+### Phase 10.3 — Future-expansion triggers
+
+Finalized as **Appendix — Future Expansion Triggers** in GOVERNANCE.md with
+concrete thresholds (NG1 domain-team: ≥2 sustained-active on a project; §33
+RFC/voting: Core >5, voting fallback: Core >3; §12 second flagship: first
+flagship `stable`/`maintained` for a full quarterly cycle; `enforce_admins`
+flip: second Core reviewer; mentorship: volume bar). None acted upon now.
+
+### Final Definition of Done (§F) — verification
+
+- [x] Profile README one-screen identity+pipeline; §14.3 links all 200 (dual-mode visual = manual QA carry)
+- [x] Repo architecture matches §12 (demo-repository now recorded; .gitkeep removed; zero sprawl)
+- [x] Tested first-contribution pathway (CONTRIBUTING, forms, labels, PR template; welcome+labeler live)
+- [x] Idea lifecycle: `ideas#3` through RAW IDEA → REVIEW → RESEARCH
+- [x] Membership live, security-bounded, `community#2` full dry-run cycle
+- [x] Automation minimal-permission, zero privileged (M8 audit, 12 workflows)
+- [x] Branch protection tiers applied (§31) on all public repos per maturity
+- [x] GOVERNANCE complete, no placeholders, appendix finalized
+- [x] §15 README system in place, templates for all 5 repo types
+- [x] ≥1 honest `active` repo (`.github`, `community`, `ideas`); flagship intentionally `concept`
+- [x] §30 fully audited, zero unresolved findings
+- [ ] Manual QA sign-off — **human: dual-mode render, fresh-account first-contribution, social-preview visuals, six-form intake pass** (unchanged carries)
+- [x] Scalable foundation; expansion triggers documented, not pre-built
+
+### M10 completion checklist
+
+- [x] Full sweep passes, zero regressions (2 drift items fixed and recorded)
+- [x] Metrics baseline recorded (§38, first data point)
+- [x] Expansion triggers documented (GOVERNANCE appendix, concrete thresholds)
+- [x] Final Definition of Done verified in full (programmatic items; manual QA listed as owner carries)
+- [ ] **TERMINAL SIGN-OFF — explicit owner sign-off closes the M0–M10 PRD scope**
+
+### Owner carries after sign-off
+
+- Manual QA sign-off suite (listed under DoD above)
+- Enable stale-triage daily cron after the dry-run sign-off (dry runs of the
+  workflow have been valid since M4)
+- Review/merge the 4 open Dependabot PRs (checkout 4.4.0 → 7.0.1)
+- Create the **Project Collaboration** Discussions category on `community`
+  (M9.4, UI-only)
+- First real (non-dry-run) membership grant — the true end-to-end test —
+  triggering the switch to real onboarding checklist execution
+- Treat the §38 baseline as the comparison point for the first quarterly review
