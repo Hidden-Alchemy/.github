@@ -763,7 +763,25 @@ a "no issue" conclusion, revert is a one-liner if a human sees it return).
       one status per §25; labeler no-op confirmed)
 - [x] Profile README updated: `ideas` + `community` links live; §14.3 link sweep
       = all 200; no stale "foundation work" phrasing remains
-- [ ] Project board movement —owner UI/scoped-token step (blocked in-phase;
-      issue+label lifecycle is the §23 source of truth and passed)
+- [x] Project board movement — created live after this entry (see addendum below)
+      via a project-scoped token supplied by the owner; §23 lifecycle verified end-to-end
 - [ ] Manual QA: fresh-account persona simulation carried over (M3/M4/M6)
 - [ ] **Explicit sign-off required before proceeding to M7**
+
+### Addendum (post-entry, board completions)
+
+Closed the M5/M6 owner-step with the owner-supplied project-scoped token
+(used transiently, in-memory only; **never** written to any file, workflow, or
+log — token neither recorded here nor committed; owner advised to revoke it at
+github.com/settings/tokens since it was pasted in chat):
+
+- **Board live:** "Idea Lifecycle" → https://github.com/orgs/Hidden-Alchemy/projects/1
+  (`PVT_kwDOEv32JM4BiuN7`).
+- **Status field:** single-select populated with the exact §23 stages (Raw Idea,
+  Under Review, Research, Architecture, Prototype, Active Project, Stable,
+  Maintained, Archived) with stage-scoped descriptions and §24 status colors.
+- **ideas#3 linked** at `Research` (its current lifecycle stage) via
+  `addProjectV2ItemById` + `updateProjectV2ItemFieldValue`; verified by read-back
+  query. This closes M6.1's "project board movement" acceptance item for real.
+- `ideas` README board link updated to the exact project URL; repo-health-check
+  re-ran green on that push.
