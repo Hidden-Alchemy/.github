@@ -1096,3 +1096,32 @@ flip: second Core reviewer; mentorship: volume bar). None acted upon now.
 - First real (non-dry-run) membership grant — the true end-to-end test —
   triggering the switch to real onboarding checklist execution
 - Treat the §38 baseline as the comparison point for the first quarterly review
+
+---
+
+## M10 close-out (carried actions executed)
+
+**Terminal sign-off granted** (owner: "sure, continue"). Post-sign-off carries
+executed where automatable:
+
+- **Stale-triage daily cron ENABLED** — `schedule: cron "17 3 * * *"` in
+  `.github/workflows/stale-triage.yml` (label-only workflow, non-destructive,
+  validated by dry-runs since M4). Enabled at M10 sign-off; §30-audit-clean
+  workflow unchanged otherwise.
+- **Dependabot PRs (actions/checkout 4.4.0 → 7.0.1):** all 4 opened. Verified
+  each preserves a SHA-40 pin (`11d5960a` → `3d3c42e5 # v7.0.1`), §30-compliant.
+  `idea-forge#1` **merged** (verified in `main`). The other three
+  (`.github#3`, `community#1`, `ideas#1`) are **blocked by GitHub's OAuth
+  `workflow`-scope gate** — merging a PR that writes `.github/workflows/**`
+  via this token is refused server-side (GraphQL: "refusing to allow an OAuth
+  App ... without `workflow` scope"). Not a config defect; needs a `workflow`-
+  scoped token or a Web-UI merge. **Owner step.** (idea-forge's identical PR
+  merged — behavior is inconsistent across repos, logged as observed.)
+
+### Still-carried owner steps
+- Merge the 3 remaining Dependabot checkout PRs (workflow-scope-gated)
+- Create the **Project Collaboration** Discussions category (UI-only, M9.4)
+- Manual QA sign-off suite (dual-mode render, fresh-account first-contribution,
+  social-preview visuals, six-form intake pass)
+- First real (non-dry-run) membership grant → onboarding checklist execution
+- Compare §38 metrics baseline at the first quarterly review (trigger set live)
