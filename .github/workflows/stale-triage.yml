@@ -12,7 +12,8 @@
 # public input); permissions issues/PRs write only; no secrets; no checkout;
 # no third-party actions. It only posts comments and never closes or relabels.
 #
-# Dry-run sequencing (per Task 4.4.1): the schedule trigger is COMMENTED OUT
+# Dry-run sequencing (per Task 4.4.1): schedule was fed dry-run flags until the
+# M10 sign-off; it now runs live daily (label-only — never closes or relabels).
 # until a dry-run has been manually reviewed at sign-off. Until then the
 # workflow is driven explicitly via workflow_dispatch (dry_run=true first).
 
