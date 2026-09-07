@@ -785,3 +785,76 @@ github.com/settings/tokens since it was pasted in chat):
   query. This closes M6.1's "project board movement" acceptance item for real.
 - `ideas` README board link updated to the exact project URL; repo-health-check
   re-ran green on that push.
+
+---
+
+## M7 — Membership System Live
+
+**Committed:** `.github` push (GOVERNANCE.md membership section finalized). The
+dry-run review cycle lives on `Hidden-Alchemy/community#2` (closed).
+
+### Phase 7.1 — Form activation & automation verification
+
+- Membership Interest form updated (community `ISSUE_TEMPLATE/
+  membership_interest.yml`): added the §20 privacy line — submissions are
+  public, no sensitive data requested — before activation. Pushed to
+  `community`.
+- Activation test on `community#2` (clearly marked **TEST PERSONA — dry-run**,
+  no real applicant):
+  - Issue created with the form's auto-label `membership:needs-review`.
+  - **Labeler observed (reconciliation note):** fallback added `status:triage`,
+    because `membership:needs-review` is a community-facet label, not a §26
+    type label. Per §25 this is legal (one label per facet) and harmless; the
+    reviewer replaces the community-facet label at decision time. Documented
+    here rather than changing the labeler (its §26 mapping is defined for type
+    labels only; sapping membership into that logic is out of scope).
+  - **Acknowledgement verified:** `welcome-first-interaction` fired on the
+    first interaction in `community` (run `completed/success`, comment posted)
+    — this is the automated acknowledgement comment for a first-time
+    applicant per §20. Repeat applicants get the acknowledgement from the
+    maintainer's first review comment (no dedicated ack workflow exists; §29
+    defines exactly four workflows, so nothing new was added — documented).
+
+### Phase 7.2 — Dry-run review cycle (`community#2`, closed)
+
+Full §20 cycle exercised on the marked TEST submission:
+
+1. Maintainer review comment scoring the submission against the §19.1 bar
+   (this persona: zero contributions → below Recognized Contributor entry bar).
+2. Decision as comment + label (`membership:declined`) with a written reason,
+   then issue closed.
+3. The §20.1 onboarding checklist was embedded in the decision comment,
+   individually marked **NOT EXECUTED (dry-run)** — the five bullets
+   (invitation sent, accepted, `community` team add, welcome, governance/CoC
+   pointers) are human-executed by design. The out-of-band invitation step is
+   validated for real at the first genuine approval, which requires a real
+   candidate; the owner may opt to run a live approval dry-run later using a
+   second account they control.
+
+**Rationale logged:** the DECLINE path was exercised on the test persona
+rather than fabricating an approval — honest, first-class §20 outcome; the
+approval-path mechanics (label swap, close, §20.1 checklist placement) were
+validated structurally in the same issue.
+
+### Phase 7.3 — GOVERNANCE.md membership section finalized
+
+Replaced the M1 placeholder ("finalized in milestone M7") with full confirmed
+content: the verbatim §19 distinction quote, the levels table, the request &
+review process (earned eligibility → form → automation-assist → human review →
+decision label + close → manual out-of-band invitation + §20.1 checklist),
+removal criteria (§19.2), and the binding §21 security boundary. Grep-verified:
+no `placeholder`/`TBD`/`finalized in milestone` tokens remain.
+
+### M7 checklist
+
+- [x] Membership form live and public-visibility line added (§20)
+- [x] Automation verified: labeler fallback (~status:triage, reconciliation
+      documented) + welcome acknowledgement fired on `community#2`
+- [x] Full dry-run review cycle completed and logged (`community#2` closed;
+      decision comment + label + written reason; §20.1 checklist embedded)
+- [x] GOVERNANCE.md membership section finalized — no placeholders remain
+- [x] Health checks still green on all repos after pushes
+- [ ] Manual QA: fresh-account persona simulation carried over (M3/M4/M6);
+      first genuine membership approval will validate the out-of-band
+      invitation step for real
+- [ ] **Explicit sign-off required before proceeding to M8**
