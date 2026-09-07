@@ -54,7 +54,7 @@ Systems that have reached a real, non-experimental status. This table is maintai
 
 Experiments here are short-lived, honestly-labeled explorations that have not yet earned a dedicated repository: a hypothesis, an objective, a status, and a next step — and, when appropriate, a recorded dead end.
 
-- Concepts and raw ideas are submitted through the **Idea Submission** form (the `ideas` repository, being stood up as part of the org foundation work).
+- The pipeline intake is the [`ideas` repository](https://github.com/Hidden-Alchemy/ideas) — concepts and raw ideas are submitted through the **Idea Submission** form, then tracked through the §23 lifecycle (Raw Idea → … → Archived) by issue and label.
 - Short-lived experimental code lives in the `experiments` repository — created only when the first real experiment exists, not before.
 - Every experiment declares its lifecycle status; not every experiment becomes a product, and that is intentional.
 
@@ -99,7 +99,7 @@ Read [CONTRIBUTING.md](https://github.com/Hidden-Alchemy/.github/blob/main/CONTR
 The bar, plainly:
 
 - Be a **Recognized Contributor**: at least three accepted contributions spanning at least a month.
-- Submit the Membership Interest form (in the `community` repo, live as part of the org foundation work).
+- Submit the [Membership Interest form](https://github.com/Hidden-Alchemy/community/issues/new?template=membership_interest.yml) (in the [`community` repository](https://github.com/Hidden-Alchemy/community)).
 - A human maintainer reviews the request against explicit, published criteria and the decision is recorded on the issue. Organization invitations are always sent manually — never automated.
 
 See [GOVERNANCE.md](https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md) for the full model.
