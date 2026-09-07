@@ -605,3 +605,105 @@ _End of M4 entry._
 - #1 Owners RESOLVED (M1). #3 Teams RESOLVED (M1). #4 Verdigris/brand RESOLVED (M2).
 - #2 Private repos: still unconfirmed (owner question); unaffected through M4
   (all automation runs on public repos; owner can reply whenever).
+
+---
+
+## M5 — Community Repositories (community + ideas)
+
+**Committed:** `.github` (this repo) push containing the §34 health-check fix +
+config.yml link correction. `community` and `ideas` are separate repos, each
+pushed to `main` (Hassan0703 / SSH / GIT_SSH_COMMAND=BatchMode).
+
+### What got built
+
+- **`Hidden-Alchemy/community`** (public, Core-Team-administered):
+  - `README.md` — §15 community-type blocks A/C/D/G/J + `Status: active` line;
+    hero, this-is/is-not, governance summary links, contribution pointer, MIT
+    footer. No install/quickstart (doc repo).
+  - `GOVERNANCE.md` — **one-page pointer** to the canonical
+    `.github/GOVERNANCE.md` (per §34 "never restate rules"), with one-line
+    summaries and an explicit "canonical file wins" inequality clause.
+  - `RECOGNITION.md` — §32 chronology log with maintainer instructions and an
+    honest empty-state table (no fabricated entries).
+  - `ISSUE_TEMPLATE/config.yml` (blank issues off, Help link → community
+    discussions) + `membership_interest.yml` (its final home per §26).
+  - Full repo-local copies of the four §29 workflows + `.github/dependabot.yml`
+    (§30.6) — required because GitHub does **not** auto-propagate workflows or
+    labels from the org `.github` repo.
+- **`Hidden-Alchemy/ideas`** (public, Core-Team-administered):
+  - `README.md` — §15 blocks + `Status: active`; the §23 idea-lifecycle string;
+    this-is/is-not (procurement/catalog language); board link; MIT footer.
+  - `ISSUE_TEMPLATE/config.yml` + `idea_submission.yml` + `project_proposal.yml`
+    (final homes per §26). blank issues off.
+  - Same 4 workflow copies + dependabot.yml.
+- **Discussion surface:** Discussions enabled on `community`
+  (`has_discussions: true`). GitHub's default categories exist (Announcements,
+  General, Ideas, Polls, Q&A, Show-and-tell).
+
+### §34 discovery → health-check fix (shipped to all three repos)
+
+The repo-health-check requirement `[ -f SECURITY.md ]` **false-failed** both new
+repos despite full org-default inheritance: the community-health API reports
+`health_percentage: 100` for `ideas`, resolving SECURITY.md/CoC/CONTRIBUTING/PR
+template from the org `.github` repo as §34 intends. Fix: the check now honors
+in-repo *or* org-default presence (probe the `.github` repo's SECURITY.md) and
+treats the §34-inherited state as passing. Pushed to `.github`, `community`,
+`ideas`; live results: all three `repo-health-check … success`.
+
+### Label taxonomy (§25) on the new repos
+
+Applied the 24-label §25 set to both `community` and `ideas`; deleted the
+GitHub defaults not in the set. **Automation artifact logged:** Dependabot
+auto-creates `dependencies` + `github_actions` ecosystem labels on first run
+despite `labels: []` in dependabot.yml — removed from all three repos to hold
+the exact 24; note that the next Dependabot run may attempt to recreate the
+`dependencies` sticker on its PRs (accepted as documented automation behavior;
+a "no issue" conclusion, revert is a one-liner if a human sees it return).
+
+### Live test results on `ideas`
+
+- Issue #2 created with **no labels** → §29 labeler fallback applied
+  `status:triage` only, run `completed/success`; welcome-first-interaction
+  fired (expected, first issue) and its comment was removed post-close to keep
+  the repo pristine. Issue closed.
+
+### Requirement-vs-capability checks (documented owner steps)
+
+1. **GitHub Project (v2) board "Idea Lifecycle"** — REST project creation
+   endpoints and the Projects v2 GraphQL `createProjectV2` exist, but the
+   org API token lacks `read:project`/`project` scope (verified:
+   `INSUFFICIENT_SCOPES`). **Owner/UI step:** create an org-level Projects v2
+   board named "Idea Lifecycle" with the §23 stages as the Status field
+   options; the `ideas` README documents the expected link.
+2. **Discussion categories** — §27 wants {Announcements, Ideas, General,
+   Research, Architecture, Help} + merge Show-and-tell into General + add
+   Project Collab LATER. Category create/rename/delete is **UI-only**
+   (verified: no GraphQL/REST mutation exists). **Owner/UI step:** create
+   Research/Architecture/Help; rename Show-and-tell → General is a UI merge;
+   delete Polls if it must vanish (defaults are additive, no §25-style label
+   constraint applies to categories). Until Help is created, the config.yml
+   "Help / Questions" link points at a not-yet-existing `/categories/help`
+   (resolves 200 redirect-style today; UX caveat noted).
+
+### Fixed in `.github` (this repo) during M5
+
+- `ISSUE_TEMPLATE/config.yml` Help link now → `community` repo discussions
+  (was a 404 to org-level discussions, which are not enabled).
+- `repo-health-check.yml` §34 inheritance fix (above).
+
+### M5 checklist
+
+- [x] Community & Ideas repos created (public), Core Team granted admin
+- [x] §15 community-template READMEs + `Status: active` in both
+- [x] §26 forms moved to their final homes; config.yml blank-issues-off
+- [x] §33 workflow copies + dependabot in both repos
+- [x] §25 24-label taxonomy applied; count verified = 24 in all three repos
+- [x] §34 inheritance honored by repo-health-check; all three health checks
+      green after the fix push
+- [x] Labeler fallback live-tested on `ideas` (issue #2)
+- [x] Discussions enabled on `community` (categories = owner UI step above)
+- [x] Implementation log updated (this entry)
+- [ ] **GitHub Project board (owner UI step — token scope)**
+- [ ] **Discussion category reconcile (owner UI step)**
+- [ ] Manual QA: fresh-account simulation carried over from M3/M4
+- [ ] **Explicit sign-off required before proceeding to M6**
