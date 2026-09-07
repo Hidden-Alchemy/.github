@@ -1,47 +1,39 @@
-# <img src="https://shields.io" alt="Hidden Alchemy Header" />
+# Hidden Alchemy — `.github`
 
-Welcome to the digital forge of **Hidden Alchemy**. We are a high-tier technology studio operating at the intersection of enterprise resource planning architecture and advanced engineering algorithms. We turn raw business workflows and complex code structures into highly optimized automation logic.
+This repository holds the organization-wide configuration and community health
+files for the **Hidden Alchemy** GitHub organization. It is not a product
+repository; it is the infrastructure that makes the rest of the organization
+work.
 
----
+> Hidden Alchemy is an open engineering laboratory for transforming raw ideas
+> into real systems: `IDEA → CONCEPT → ARCHITECTURE → SYSTEM → AUTOMATION → REALITY`.
 
-## 🌌 Our Core Pillars
+## What lives here
 
-* **Enterprise Alchemy (Frappe & ERPNext):** Architectural mastery in designing deep, scalable, custom server-side models, application frameworks, and unified API pathways.
-* **Intelligent Automations (AI Systems):** Merging the power of Large Language Models (LLMs) and autonomous AI agent matrices natively with core database ecosystems.
-* **Open-Source Tools:** Engineering innovative, developer-focused extensions and utility plugins designed to accelerate modern agile production pipelines.
+| Path | Purpose |
+|:---|:---|
+| `profile/README.md` | Organization profile shown on `github.com/Hidden-Alchemy` |
+| `assets/` | Shared org visual assets (SVG diagrams, social preview) |
+| `ISSUE_TEMPLATE/` | Reusable issue forms for bugs, features, ideas, proposals, membership |
+| `workflows/` | Org-wide GitHub Actions (onboarding, labeling, health checks) |
+| `templates/` | Reusable README templates from the org design system |
+| `CONTRIBUTING.md` | How to contribute to Hidden Alchemy projects |
+| `CODE_OF_CONDUCT.md` | Community standards and enforcement |
+| `SECURITY.md` | Vulnerability reporting via GitHub private advisories |
+| `SUPPORT.md` | Where to ask questions vs. file issues |
+| `GOVERNANCE.md` | Decision-making, ownership, and membership model |
 
----
+Many of these files are inherited automatically by other repositories in the
+organization via GitHub's default community health file behavior, so changes
+here propagate org-wide.
 
-## 🛠️ The Tech Stack Core
+## Using the organization profile
 
-```json
-{
-  "Backend Frameworks": ["Frappe Framework", "ERPNext Ecosystem", "Django", "Python"],
-  "Artificial Intelligence": ["Autonomous Agents", "LLM Integrations", "Workflow Automata"],
-  "Database & Infrastructure": ["MariaDB", "PostgreSQL", "Docker", "Linux Automation Systems"]
-}
-```
+This repository's `profile/README.md` is distinct from this root `README.md`:
+the former is the public face of the organization, the latter explains the
+purpose of this repository. Both are maintained as part of the org foundation
+milestones rather than as an afterthought to any project work.
 
----
+## License
 
-## ⚡ Active Laboratories & Current Roadmaps
-
-We systematically construct production-grade modules. Keep an eye out for our upcoming repository pipelines:
-
-- 🧠 **Project AI-Agent Connect:** Native autonomous communication pathways bridged seamlessly into standard transactional documents.
-- 📦 **Custom Frappe Utilities:** Highly reusable development assets and middleware components designed to cut down boilerplate system engineering time.
-- 🎨 **Minimalist Workspace Enhancements:** Modern UI/UX modifications built purely to maximize backend configuration workflows.
-
----
-
-## 🤝 Let's Collaborate
-
-Are you interested in enterprise automation systems, intelligent framework wrappers, or custom tool designs? Let's build something exceptional together.
-
-* **Primary Engineering Account:** [@Hassan0703](https://github.com)
-* **Status:** Open to core collaborative open-source tool construction and high-level enterprise architectural consulting.
-
----
-<p align="center">
-  <i>"Where advanced data structures meet industrial intelligence."</i>
-</p>
+MIT — see [LICENSE](./LICENSE).

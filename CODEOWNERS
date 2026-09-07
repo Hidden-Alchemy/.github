@@ -1,0 +1,12 @@
+# CODEOWNERS — Hidden Alchemy org-wide default
+#
+# Per PRD §30.7: changes to privileged automation, the CODEOWNERS file itself,
+# and the security policy always require Core Team review.
+#
+# NOTE: @Hidden-Alchemy/core is created in milestone M1 Phase 1.3. Until that
+# team exists, GitHub cannot resolve the owner for these paths (review is
+# required, not enforced). The team creation is a manual org-admin action.
+
+/workflows/**        @Hidden-Alchemy/core
+/.github/CODEOWNERS  @Hidden-Alchemy/core
+/SECURITY.md         @Hidden-Alchemy/core
