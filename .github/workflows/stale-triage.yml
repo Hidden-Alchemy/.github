@@ -76,7 +76,7 @@ jobs:
               return p.stdout
 
           def gh_api(method, path, payload=None):
-              cmd = ["gh", "api", "-X", method, f"{repo}/{path}"]
+              cmd = ["gh", "api", "-X", method, f"repos/{repo}/{path}"]
               if payload is not None:
                   cmd += ["--input", "-"]
                   p = subprocess.run(cmd, input=json.dumps(payload),
