@@ -58,7 +58,18 @@ jobs:
               problems+=("README.md lacks a §24 status line ('Status: <concept|research|experiment|prototype|active|stable|maintained|archived>')")
             fi
           fi
-          [ -f SECURITY.md ] || problems+=("SECURITY.md is missing")
+          # SECURITY.md presence: in-repo OR served by the org's default
+          # community-health files from the `.github` repo (§34 — GitHub
+          # inherits org defaults; we must not require per-repo copies).
+          # "https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/SECURITY.md"
+          if [ ! -f SECURITY.md ]; then
+            if curl -s -m 10 -o /dev/null -f \
+              "https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/SECURITY.md"; then
+              echo "::notice::SECURITY.md not present locally; inherited from org default (.github repo) per §34."
+            else
+              problems+=("SECURITY.md is missing (and org default not reachable)")
+            fi
+          fi
 
           conclusion="success"
           title="All four health signals present"
