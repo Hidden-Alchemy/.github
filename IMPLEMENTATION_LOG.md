@@ -858,3 +858,75 @@ no `placeholder`/`TBD`/`finalized in milestone` tokens remain.
       first genuine membership approval will validate the out-of-band
       invitation step for real
 - [ ] **Explicit sign-off required before proceeding to M8**
+
+---
+
+## M8 — Governance & Branch Protection Hardening
+
+**Committed:** `.github` push (CODEOWNERS relocation). Branch protection applied
+live on all three repos.
+
+### Phase 8.1 — Tier assignment & application (§31)
+
+| Repo | §24 status | §31 tier | Applied |
+|---|---|---|---|
+| `.github` | active | Critical Infrastructure | 1 approving review **from CODEOWNERS** (`require_code_owner_reviews: true`, codeowners = `@Hidden-Alchemy/core`); `repo-health-check` required; direct push disabled for non-admins; force-push/deletion unchanged for admins |
+| `community` | active | Active Project | 1 approving review; `repo-health-check` required; direct push disabled for non-admins |
+| `ideas` | active | Active Project | same |
+
+Applied via `PUT /repos/{owner}/{repo}/branches/main/protection`; GET-verified
+on all three (review_count=1, contexts=`["repo-health-check"]`).
+
+**Decision logged — `enforce_admins: false` on all tiers.** Rationale:
+GitHub's required-reviews cannot be satisfied for a Code Owner's *own* PR when
+the Core Team has a single member (authors cannot approve their own PR); strict
+enforcement would deadlock the org's only maintainer and contradict the
+acknowledged 1–2-person current-scale limitation. `enforce_admins: true` is the
+recommended setting **once a second Core reviewer exists** — at that point flip
+it for Critical (`.github`) first, then Active repos. This is a documented
+deliberate-choice, not spec drift: non-admin contributors and automation are
+fully gated as specified; the admin push path is the pragmatic escape hatch
+today.
+
+**Consequence:** the open Dependabot PR #3 (bump of `actions/checkout` pin in
+`repo-health-check.yml`) now requires a CODEOWNERS (Core) approving review
+before merge — exactly the §30/§31 intent for supply-chain changes.
+
+### Phase 8.2 — CODEOWNERS verification
+
+- File was at repo root but self-patterns referenced `/.github/CODEOWNERS`
+  (mismatch — its own path was never matched). **Relocated to
+  `.github/CODEOWNERS`** so the `/CODEOWNERS` and `/workflows/**` patterns
+  self-match (§30.7 now effective for the file itself).
+- `core` team confirmed: `@Hidden-Alchemy/core`, member Hassan0703 (maintainer).
+  `core` has `admin` on `community`/`ideas` (`role_name=admin` verified);
+  **gap found:** core has no repo-level entry on `.github`. API correction is
+  blocked (this org token has `read:org` only, team-repo writes need
+  `admin:org`). CODEOWNERS review remains functional today because the sole
+  core member is an admin collaborator there. **Owner step:** add `core` team
+  with Admin on `.github` via Settings → Manage access (or retoken with
+  `admin:org`) when convenient.
+- Outside read-collaborators `Hassan0990`, `bc230426875hal-cloud` on `.github`
+  noted (read only; no protection impact).
+
+### Phase 8.3 — Full security self-audit (§30)
+
+Scripted audit across all 12 workflow files (.github + both repo copies):
+- `pull_request_target`: **0** (only safe `pull_request`/`push`/`issues`/
+  `workflow_dispatch` triggers).
+- Secrets: only default `secrets.GITHUB_TOKEN` (0 non-default secrets); no PATs.
+- Pins: every `uses:` is a 40-hex SHA pin (0 floating tags).
+- Permissions: explicit minimal `permissions:` block present in all 12.
+- Result: **zero unresolved findings.**
+
+### M8 checklist
+
+- [x] Every existing repo (`.github`, `community`, `ideas`) has branch
+      protection matching its §31 tier (GET-verified)
+- [x] CODEOWNERS relocated so §30.7 self-gating is real; `core`
+      membership/repos verified (`community`/`ideas` admin OK; `.github`
+      owner-UI add noted)
+- [x] Security audit log complete — zero unresolved findings; `enforce_admins:
+      false` decision with flip-to-true recommendation recorded
+- [ ] Owner optional: add `core` (Admin) to `.github` via UI / admin:org token
+- [ ] **Explicit sign-off required before proceeding to M9**
