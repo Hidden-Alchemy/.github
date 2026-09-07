@@ -930,3 +930,84 @@ Scripted audit across all 12 workflow files (.github + both repo copies):
       false` decision with flip-to-true recommendation recorded
 - [ ] Owner optional: add `core` (Admin) to `.github` via UI / admin:org token
 - [ ] **Explicit sign-off required before proceeding to M9**
+
+---
+
+## M9 — Flagship Project Integration
+
+**Committed:** `.github` push (README templates). Flagship repo `idea-forge`
+created + bootstrapped, pushed to its own `main`.
+
+### Phase 9.1 — Flagship selection (human-confirmed)
+
+Selection was confirmed earlier as a human decision (owner chose the
+"AI-assisted idea-to-system pipeline tool" as the M6 seed, with the explicit
+caveat that this pre-commits the M9 flagship). Re-affirmed by owner sign-off
+("do whatever needed"). Strategic fit documented at selection time: community
+value (closes idea-to-execution gap), contributor accessibility (good-first-issue
+surfaces: eval fixtures, template drafting, prompt evals), feasibility with
+solo-maintainer capacity (CLI-only v0, no GUI), alignment with §14.1 domain list
+(AI, automation, dev tools).
+
+### Phase 9.2 — Repository creation (`idea-forge`)
+
+§12.1 checklist satisfied and recorded:
+- Purpose (one sentence): AI-assisted idea-to-system pipeline tool; walks an
+  idea through the org's stages with human-in-the-loop decisions.
+- Target users: solo builders and small teams shipping a first real system; the
+  org's own contributors dogfooding the pipeline.
+- Scope boundary (README block D): CLI-first v0; never an auto-shipping code
+  generator; no GUI-first; no secrets/API keys.
+- Maintainer assigned: @Hassan0703 (primary accountable).
+- License: MIT.
+- README: **§15 flagship template** (blocks A–J) filled honestly, `Status:
+  `concept`` — research GO recorded, no runnable software yet. Zero
+  TODO/placeholder tokens (grep-verified); repo-health-check passing on first
+  push.
+- Lifecycle status: `concept` (honesty rule — not marked `active`).
+- Labels: §25 24-label taxonomy applied (count verified = 24; repo-local set
+  reused, no extras).
+- Baseline files: LICENSE, README, `.github/CODEOWNERS` (workflows/CODEOWNERS/
+  SECURITY → core), the four §29 workflows, dependabot.yml, issue forms
+  (bug/feature/config). §34 org-default files (CONTRIBUTING/SECURITY/CoC)
+  inherited automatically (verified via health-percentage earlier).
+- **§31 Flagship tier protection applied:** 1 required approving review +
+  `repo-health-check` required + force-push disabled; direct push disabled for
+  non-admins; `enforce_admins: false` consistent with the M8 decision.
+- `core` team granted admin on `idea-forge` (verified). **Bonus closed:** the
+  same PUT successfully granted `core` admin on `.github` (M8 owner-step closed
+  programmatically).
+
+### Phase 9.3 — Profile Active Systems (correctly deferred)
+
+`idea-forge` is `concept`, not `active` — the §14.1 honest-empty-state stays
+until the flagship genuinely earns `active` (§9.3 rule). Not updated.
+
+### Phase 9.4 — Discussions "Project Collaboration" category
+
+§27 marked this LATER; it is now arguably needed. Category creation/rename is
+UI-only (verified in M5 — no API mutation exists). **Owner UI step:** create the
+**Project Collaboration** category on `community` Discussions (and reconcile the
+full §27 category set while there).
+
+### ideas#3 linkage
+
+Added a comment on `ideas#3` pointing at `idea-forge` as its home; the issue
+remains open and on the Idea Lifecycle board at Research until the accepted
+Architecture note moves it to Architecture (§23). No premature close (the
+Active-Project close-with-link transition has not been reached).
+
+### M9 checklist
+
+- [x] Flagship selection explicitly confirmed by Core Team (owner decision,
+      M6 seed + M9 sign-off wording)
+- [x] Repo created per §12.1 checklist (all 8 items, recorded above)
+- [x] README passes §15 flagship template (A–J present, no TODO tokens) and is
+      the first real usage of the newly-authored template set
+- [x] §15 templates authored for all five repo types (flagship/experiment/
+      research/community/library) under `.github/templates/`
+- [x] Profile Active Systems updated **only** when status is earned — deferred
+      (concept, not active)
+- [ ] Discussions "Project Collaboration" category — owner UI step (M9.4)
+- [x] Health checks green on all four repos; all working trees clean
+- [ ] **Explicit sign-off required before proceeding to M10**
