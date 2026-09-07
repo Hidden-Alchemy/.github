@@ -1,331 +1,117 @@
-<div style="height:4px;background:linear-gradient(90deg,#BD9C61,#4C6B5C,#BD9C61);border-radius:0 0 4px 4px"></div>
-<!-- ================= NAV ================= -->
-<div style="display:flex;align-items:center;justify-content:space-between;max-width:920px;margin:22px auto 0;padding:0 4px">
-<div style="display:flex;align-items:center">
+<div style="height:6px;background:linear-gradient(90deg,#BD9C61,#4C6B5C,#BD9C61)"></div>
+
+<div style="text-align:center;padding:58px 16px 0">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-white-transparent.png">
-<img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-black-transparent.png" width="26" alt="Hidden Alchemy mark">
-</picture>
-<span style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:15px;margin-left:9px;letter-spacing:-0.01em">Hidden Alchemy</span>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-white-transparent.png">
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-black-transparent.png" width="152" alt="Hidden Alchemy"></picture>
 </div>
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;letter-spacing:0.02em">
-<a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none;color:rgba(110,119,129,1);margin:0 8px">ideas</a>
-<a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none;color:rgba(110,119,129,1);margin:0 8px">community</a>
-<a href="https://github.com/orgs/Hidden-Alchemy/projects/1" style="text-decoration:none;color:rgba(110,119,129,1);margin:0 8px">board</a>
-<a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md" style="text-decoration:none;color:rgba(110,119,129,1);margin:0 8px">governance</a>
-<a href="https://github.com/Hidden-Alchemy/community/issues/new?template=membership_interest.yml" style="text-decoration:none;display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:12px;border-radius:999px;padding:6px 16px;margin-left:6px">Join the lab</a>
-</div>
-</div>
-<!-- ================= HERO ================= -->
-<div style="max-width:920px;margin:74px auto 0;text-align:center;padding:0 4px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;letter-spacing:3px;color:rgba(154,164,175,1)">
-<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#2DA44E;margin-right:8px"></span>OPEN ENGINEERING LABORATORY · EST. 2026
-</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:46px;line-height:1.08;letter-spacing:-0.03em;margin:22px 0 0">
-Raw ideas,<br>
-<span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:600;color:rgba(189,156,97,1)">forged into real systems.</span>
-</div>
-<div style="font-size:15.5px;line-height:1.65;color:rgba(110,119,129,1);max-width:560px;margin:20px auto 0">
-Hidden Alchemy runs an idea-to-production pipeline in public — every stage writes an artifact, every transition is a human decision, every status is honest.
-</div>
-<div style="margin-top:30px">
-<a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=idea_submission.yml" style="text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:14.5px;color:#0d1117;background:linear-gradient(135deg,#E6C078,#BD9C61);border-radius:999px;padding:13px 26px;display:inline-block;box-shadow:0 6px 18px rgba(189,156,97,0.35)">Submit an idea →</a>
-<a href="https://github.com/orgs/Hidden-Alchemy/repositories" style="text-decoration:none;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:14.5px;color:rgba(76,107,92,1);border:1px solid rgba(76,107,92,0.5);border-radius:999px;padding:13px 26px;display:inline-block;margin-left:12px">Explore repositories</a>
-</div>
-<div style="margin-top:14px;font-size:12px;color:rgba(154,164,175,1)">No membership required to contribute. Start anywhere.</div>
-<div style="margin:44px 0 0">
+
+<div style="text-align:center;margin:36px auto 0;max-width:1000px;padding:0 12px">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/hero-dark.svg">
-<img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/hero-light.svg" width="100%" style="border-radius:18px" alt="Animated pipeline IDEA → CONCEPT → ARCHITECTURE → SYSTEM → AUTOMATION → REALITY">
-</picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/banner-3d-dark.svg">
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/banner-3d-light.svg" width="100%" alt="Animated 3D pipeline — IDEA → CONCEPT → ARCHITECTURE → SYSTEM → AUTOMATION → REALITY"></picture>
 </div>
-<div style="margin:18px auto 0;max-width:920px">
-<img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/pulse/assets/svg/org-pulse.svg" width="100%" style="border-radius:18px" alt="Live org pulse — repositories, ideas in flight, active systems, pipeline stage">
-<div style="margin-top:6px;font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10.5px;letter-spacing:1.5px;color:rgba(154,164,175,1)">LIVE DASHBOARD · REGENERATED DAILY BY <a href="https://github.com/Hidden-Alchemy/.github/blob/main/.github/workflows/org-pulse-svg.yml" style="text-decoration:none;color:rgba(154,164,175,1)">org-pulse</a></div>
+
+<div style="text-align:center;margin:26px auto 0;max-width:900px;padding:0 12px">
+<img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/pulse/assets/svg/org-pulse.svg" width="100%" style="border-radius:20px" alt="Live org pulse dashboard — repositories, ideas in flight, active systems, health">
+<div style="margin-top:10px;font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:2px;color:rgba(140,149,159,1)">LIVE DASHBOARD · REGENERATED DAILY BY <a href="https://github.com/Hidden-Alchemy/.github/blob/main/.github/workflows/org-pulse-svg.yml" style="text-decoration:none;color:rgba(189,156,97,1)">org-pulse</a></div>
 </div>
+
+<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">01</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">HOW WE WORK</div>
+<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">The Alchemy Process</div>
 </div>
-<!-- ================= STAT STRIP ================= -->
-<div style="max-width:920px;margin:26px auto 0;display:flex;flex-wrap:wrap">
-<div style="flex:1;min-width:180px;text-align:center;background:rgba(140,150,160,0.06);border:1px solid rgba(140,150,160,0.16);border-radius:14px;padding:14px 10px;margin:6px">
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:26px">4</div>
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10px;letter-spacing:1.5px;color:rgba(154,164,175,1);margin-top:2px">REPOSITORIES</div>
+
+<div style="text-align:center;margin:30px auto 0;max-width:900px">
+<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">IDEA</span>
+<span style="display:inline-block;padding:12px 26px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:16px;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;box-shadow:0 6px 22px rgba(189,156,97,0.4);border:1px solid rgba(189,156,97,0.7)">CONCEPT&nbsp;&nbsp;·&nbsp;&nbsp;CURRENT</span>
+<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">ARCHITECTURE</span>
+<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">SYSTEM</span>
+<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">AUTOMATION</span>
+<span style="display:inline-block;padding:11px 22px;margin:6px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:15px;background:rgba(140,150,160,0.07);border:1px solid rgba(140,150,160,0.22)">REALITY</span>
 </div>
-<div style="flex:1;min-width:180px;text-align:center;background:rgba(45,164,78,0.07);border:1px solid rgba(45,164,78,0.22);border-radius:14px;padding:14px 10px;margin:6px">
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:26px;color:#2DA44E">3</div>
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10px;letter-spacing:1.5px;color:rgba(154,164,175,1);margin-top:2px">ACTIVE SYSTEMS</div>
+
+<div style="text-align:center;margin:22px auto 0;max-width:680px;font-size:16.5px;line-height:1.8;color:rgba(110,119,129,1)">Every stage writes a real artifact. Every transition is a human decision. Nothing advances alone, and nothing is labelled done until it is.</div>
+
+<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">02</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">DOMAIN TERRITORY</div>
+<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">What We Build</div>
 </div>
-<div style="flex:1;min-width:180px;text-align:center;background:rgba(189,156,97,0.08);border:1px solid rgba(189,156,97,0.25);border-radius:14px;padding:14px 10px;margin:6px">
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:26px;color:#BD9C61">2</div>
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10px;letter-spacing:1.5px;color:rgba(154,164,175,1);margin-top:2px">IDEAS IN FLIGHT</div>
+
+<div style="text-align:center;margin:30px auto 0;max-width:940px">
+<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">Frappe &amp; ERPNext</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">Purpose-built systems on the Frappe Framework — ERPNext customization, custom DocTypes, workflow engineering.</div></div>
+<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">AI &amp; Automation</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">AI that observes, reasons and executes — agentic workflows and orchestration, never an “AI button” for its own sake.</div></div>
+<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">Software &amp; Product</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">Architecture, usability and maintainability — and the discipline of shipping, not just starting.</div></div>
+<div style="display:inline-block;width:46%;min-width:300px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:22px;padding:26px 28px"><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:20px">Research &amp; Experimentation</div><div style="font-size:15.5px;line-height:1.75;color:rgba(110,119,129,1);margin-top:10px">Genuine investigation, small labeled experiments — failure is a recorded outcome, never a secret.</div></div>
 </div>
-<div style="flex:1;min-width:180px;text-align:center;background:rgba(77,119,96,0.08);border:1px solid rgba(77,119,96,0.25);border-radius:14px;padding:14px 10px;margin:6px">
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:26px;color:#4C6B5C">4/4</div>
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10px;letter-spacing:1.5px;color:rgba(154,164,175,1);margin-top:2px">HEALTH GREEN</div>
+
+<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">03</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">ALIVE &amp; HONEST</div>
+<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">Active Systems</div>
 </div>
+
+<div style="text-align:center;margin:30px auto 0;max-width:820px">
+<div style="text-align:left;margin:10px 8px;background:rgba(45,164,78,0.07);border:1px solid rgba(45,164,78,0.25);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2DA44E;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/.github" style="text-decoration:none;color:inherit">.github</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· the foundation — profile, governance, org-wide automation</span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(45,164,78,0.15);color:#2DA44E;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">ACTIVE</span></div>
+<div style="text-align:left;margin:10px 8px;background:rgba(45,164,78,0.07);border:1px solid rgba(45,164,78,0.25);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2DA44E;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none;color:inherit">community</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· membership, recognition log, Contribution Ladder</span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(45,164,78,0.15);color:#2DA44E;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">ACTIVE</span></div>
+<div style="text-align:left;margin:10px 8px;background:rgba(45,164,78,0.07);border:1px solid rgba(45,164,78,0.25);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#2DA44E;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none;color:inherit">ideas</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· idea pipeline intake &amp; <a href="https://github.com/orgs/Hidden-Alchemy/projects/1" style="text-decoration:none;color:inherit">the board</a></span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(45,164,78,0.15);color:#2DA44E;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">ACTIVE</span></div>
+<div style="text-align:left;margin:10px 8px;background:linear-gradient(160deg,rgba(189,156,97,0.14),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.45);border-radius:20px;padding:22px 26px"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:#BD9C61;margin-right:14px"></span><b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:19px"><a href="https://github.com/Hidden-Alchemy/idea-forge" style="text-decoration:none;color:inherit">idea-forge</a></b>&nbsp;&nbsp;<span style="font-size:15px;color:rgba(110,119,129,1)">· flagship — AI-assisted idea-to-system tool · phase 02/06</span>&nbsp;&nbsp;<span style="float:right;display:inline-block;background:rgba(189,156,97,0.18);color:#BD9C61;border-radius:8px;padding:4px 12px;font-size:11px;font-weight:800;letter-spacing:1px">CONCEPT</span></div>
 </div>
-<!-- ================= SECTION TEMPLATE ================= -->
-<div style="max-width:920px;margin:88px auto 0;padding:0 4px">
-<div style="display:flex;align-items:baseline">
-<span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:30px;color:rgba(189,156,97,0.85)">01</span>
-<div style="margin-left:16px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10.5px;letter-spacing:3px;color:rgba(154,164,175,1)">HOW WE WORK</div>
-<h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:28px;letter-spacing:-0.02em;margin:4px 0 0">The Alchemy Process</h2>
+
+<div style="text-align:center;margin:18px auto 0;max-width:680px;font-size:14.5px;color:rgba(140,149,159,1)">Every status above is machine-verified by the org-wide <b style="color:#2DA44E">repo-health</b> check — nothing is marked active before it is. <b style="color:#2DA44E">4/4 green.</b></div>
+
+<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">04</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">GET INVOLVED</div>
+<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">How to Participate</div>
 </div>
-</div>
-<p style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);max-width:640px;margin:16px 0 0">
-Ideas die between concept and execution far more often than they die as ideas. We structure that dangerous middle with visible stages, written artifacts, and a human gate at every transition — so nothing moves forward alone.
-</p>
-<div style="display:flex;flex-wrap:wrap;margin-top:24px">
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<div style="display:flex;align-items:center;justify-content:space-between">
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;color:rgba(189,156,97,1);font-weight:700">01</span>
-<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#BD9C61"></span>
-</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:10px">IDEA</div>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:6px">Zero-judgment intake. A thought, written down and submitted.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(189,156,97,0.16),rgba(189,156,97,0.04));border:1px solid rgba(189,156,97,0.45);border-radius:16px;padding:18px 20px;margin:8px">
-<div style="display:flex;align-items:center;justify-content:space-between">
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;color:rgba(189,156,97,1);font-weight:700">02</span>
-<span style="display:inline-block;background:#BD9C61;color:#0d1117;border-radius:6px;padding:1px 8px;font-size:9.5px;font-weight:800;letter-spacing:1px">CURRENT</span>
-</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:10px">CONCEPT</div>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:6px">What it is. What it is <b>not</b>. Value and boundary, decided on paper.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<div style="display:flex;align-items:center;justify-content:space-between">
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;color:rgba(76,107,92,1);font-weight:700">03</span>
-<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#4C6B5C"></span>
-</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:10px">ARCHITECTURE</div>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:6px">The shape before the code — decided, written, reviewed.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<div style="display:flex;align-items:center;justify-content:space-between">
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;color:rgba(76,107,92,1);font-weight:700">04</span>
-<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#4C6B5C"></span>
-</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:10px">SYSTEM</div>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:6px">A working thing exists — built, tested, honest about its limits.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<div style="display:flex;align-items:center;justify-content:space-between">
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;color:rgba(76,107,92,1);font-weight:700">05</span>
-<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#4C6B5C"></span>
-</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:10px">AUTOMATION</div>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:6px">Repetition becomes leverage. The boring parts run themselves.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(45,164,78,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<div style="display:flex;align-items:center;justify-content:space-between">
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;color:rgba(76,107,92,1);font-weight:700">06</span>
-<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#2DA44E"></span>
-</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:10px">REALITY</div>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:6px">Used, maintained — and when its time passes, archived with a reason.</div>
-</div>
-</div>
-</div>
-<!-- ================= 02 WHAT WE BUILD ================= -->
-<div style="max-width:920px;margin:88px auto 0;padding:0 4px">
-<div style="display:flex;align-items:baseline">
-<span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:30px;color:rgba(189,156,97,0.85)">02</span>
-<div style="margin-left:16px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10.5px;letter-spacing:3px;color:rgba(154,164,175,1)">DOMAIN TERRITORY</div>
-<h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:28px;letter-spacing:-0.02em;margin:4px 0 0">What We Build</h2>
-</div>
-</div>
-<p style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);max-width:640px;margin:16px 0 0">
-Where the process is applied. This is the lab's actual territory — not a list of everything software can be.
-</p>
-<div style="display:flex;flex-wrap:wrap;margin-top:24px">
-<div style="flex:1;min-width:300px;background:linear-gradient(165deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:20px 22px;margin:8px">
-<div style="display:flex;align-items:center">
-<span style="display:inline-block;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;border-radius:10px;padding:5px 12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:13px">F</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:16px;margin-left:12px">Frappe &amp; ERPNext</b>
-</div>
-<div style="font-size:13.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:12px">
-</span>▸ Purpose-built systems on the Frappe Framework<br>▸ ERPNext customization, custom DocTypes<br>▸ Workflow engineering &amp; integrations</div>
-</div>
-<div style="flex:1;min-width:300px;background:linear-gradient(165deg,rgba(76,107,92,0.12),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:20px 22px;margin:8px">
-<div style="display:flex;align-items:center">
-<span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:10px;padding:5px 12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:13px">AI</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:16px;margin-left:12px">AI &amp; Automation</b>
-</div>
-<div style="font-size:13.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:12px">
-▸ AI that observes, reasons, executes<br>▸ Agentic workflows, orchestration, assistants<br>▸ Never an “AI button” for its own sake</div>
-</div>
-<div style="flex:1;min-width:300px;background:linear-gradient(165deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:20px 22px;margin:8px">
-<div style="display:flex;align-items:center">
-<span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:10px;padding:5px 12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:13px">S</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:16px;margin-left:12px">Software &amp; Product</b>
-</div>
-<div style="font-size:13.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:12px">
-▸ Architecture, usability, maintainability<br>▸ Developer experience, the discipline of shipping</div>
-</div>
-<div style="flex:1;min-width:300px;background:linear-gradient(165deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:20px 22px;margin:8px">
-<div style="display:flex;align-items:center">
-<span style="display:inline-block;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;border-radius:10px;padding:5px 12px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:13px">R</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:16px;margin-left:12px">Research &amp; Experimentation</b>
-</div>
-<div style="font-size:13.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:12px">
-▸ Genuine investigation, small labeled experiments<br>▸ Failure is a recorded outcome — never a secret</div>
-</div>
-</div>
-</div>
-<!-- ================= 03 LIVE SYSTEMS ================= -->
-<div style="max-width:920px;margin:88px auto 0;padding:0 4px">
-<div style="display:flex;align-items:baseline">
-<span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:30px;color:rgba(189,156,97,0.85)">03</span>
-<div style="margin-left:16px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10.5px;letter-spacing:3px;color:rgba(154,164,175,1)">ALIVE &amp; HONEST</div>
-<h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:28px;letter-spacing:-0.02em;margin:4px 0 0">Active Systems</h2>
-</div>
-</div>
-<p style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);max-width:640px;margin:16px 0 0">
-Only things that genuinely work are listed. Nothing is marked active before it is — and every entry here is machine-verified by the org-wide health check (<b style="color:rgba(45,164,78,1)">4/4 green</b>).
-</p>
-<div style="margin-top:22px;border:1px solid rgba(140,150,160,0.18);border-radius:18px;overflow:hidden">
-<div style="display:flex;align-items:center;padding:16px 22px;background:rgba(45,164,78,0.07);border-bottom:1px solid rgba(140,150,160,0.12)">
-<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:14px"></span>
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;font-weight:700"><a href="https://github.com/Hidden-Alchemy/.github" style="text-decoration:none">.github</a></span>
-<span style="flex:1;margin-left:14px;font-size:13px;color:rgba(110,119,129,1)">Foundation — profile, governance, org-wide automation &amp; health files</span>
-<span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 10px;font-size:10px;font-weight:800;letter-spacing:1px">ACTIVE</span>
-</div>
-<div style="display:flex;align-items:center;padding:16px 22px;background:rgba(45,164,78,0.07);border-bottom:1px solid rgba(140,150,160,0.12)">
-<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:14px"></span>
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;font-weight:700"><a href="https://github.com/Hidden-Alchemy/community" style="text-decoration:none">community</a></span>
-<span style="flex:1;margin-left:14px;font-size:13px;color:rgba(110,119,129,1)">Governance docs, membership process, recognition log</span>
-<span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 10px;font-size:10px;font-weight:800;letter-spacing:1px">ACTIVE</span>
-</div>
-<div style="display:flex;align-items:center;padding:16px 22px;background:rgba(45,164,78,0.07);border-bottom:1px solid rgba(140,150,160,0.12)">
-<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#2DA44E;margin-right:14px"></span>
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;font-weight:700"><a href="https://github.com/Hidden-Alchemy/ideas" style="text-decoration:none">ideas</a></span>
-<span style="flex:1;margin-left:14px;font-size:13px;color:rgba(110,119,129,1)">Idea pipeline intake &amp; incubation · <a href="https://github.com/orgs/Hidden-Alchemy/projects/1" style="text-decoration:none">Idea Lifecycle board</a></span>
-<span style="display:inline-block;background:rgba(45,164,78,0.14);color:#2DA44E;border-radius:6px;padding:2px 10px;font-size:10px;font-weight:800;letter-spacing:1px">ACTIVE</span>
-</div>
-<div style="display:flex;align-items:center;padding:16px 22px;background:rgba(189,156,97,0.09)">
-<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:#BD9C61;margin-right:14px"></span>
-<span style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:14px;font-weight:700"><a href="https://github.com/Hidden-Alchemy/idea-forge" style="text-decoration:none">idea-forge</a></span>
-<span style="flex:1;margin-left:14px;font-size:13px;color:rgba(110,119,129,1)">Flagship — an AI-assisted idea-to-system pipeline tool. Research passed; <b>phase 02 / 06</b></span>
-<span style="display:inline-block;background:rgba(189,156,97,0.16);color:#BD9C61;border-radius:6px;padding:2px 10px;font-size:10px;font-weight:800;letter-spacing:1px">CONCEPT</span>
-</div>
-</div>
-</div>
-<!-- ================= 04 CONTRIBUTE ================= -->
-<div style="max-width:920px;margin:88px auto 0;padding:0 4px">
-<div style="display:flex;align-items:baseline">
-<span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:30px;color:rgba(189,156,97,0.85)">04</span>
-<div style="margin-left:16px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10.5px;letter-spacing:3px;color:rgba(154,164,175,1)">GET INVOLVED</div>
-<h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:28px;letter-spacing:-0.02em;margin:4px 0 0">How to Participate</h2>
-</div>
-</div>
-<p style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);max-width:640px;margin:16px 0 0">
-Walk the whole path or jump in at any step. The pathway is public until the very last stage — contributing never requires membership.
-</p>
-<div style="display:flex;flex-wrap:wrap;margin-top:22px">
-<div style="flex:1;min-width:300px;margin:8px 8px 8px 0">
+
+<div style="text-align:center;margin:30px auto 0;max-width:900px">
 <picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-pathway-dark.svg">
-<img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-pathway-light.svg" width="100%" style="border-radius:16px" alt="Animated contribution pathway EXPLORE → DISCUSS → CONTRIBUTE → COLLABORATE → RECOGNITION → TRUST → MEMBERSHIP ELIGIBILITY">
-</picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-pathway-dark.svg">
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-pathway-light.svg" width="100%" style="border-radius:20px" alt="Contribution pathway — EXPLORE → DISCUSS → CONTRIBUTE → COLLABORATE → RECOGNITION → TRUST → MEMBERSHIP"></picture>
 </div>
-<div style="flex:1;min-width:300px;margin:8px">
-<div style="background:linear-gradient(165deg,rgba(140,150,160,0.10),rgba(140,150,160,0.03));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px">
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15.5px">Found a bug?</b>
-<div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:4px">Reproduce it, report it.</div>
-<div style="margin-top:12px"><a href="https://github.com/Hidden-Alchemy/.github/issues/new?template=bug_report.yml" style="text-decoration:none;display:inline-block;border:1px solid rgba(140,150,160,0.4);border-radius:999px;padding:7px 16px;font-size:12.5px;font-weight:600">Bug report</a></div>
+
+<div style="text-align:center;margin:30px auto 0;max-width:820px">
+<a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=idea_submission.yml" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:16px;text-decoration:none;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;box-shadow:0 8px 26px rgba(189,156,97,0.35)">Submit an idea</a>
+<a href="https://github.com/Hidden-Alchemy/.github/issues/new?template=bug_report.yml" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.55);color:rgba(76,107,92,1)">Report a bug</a>
+<a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=project_proposal.yml" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.55);color:rgba(76,107,92,1)">Propose a system</a>
+<a href="https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md" style="display:inline-block;margin:6px;padding:14px 30px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.55);color:rgba(76,107,92,1)">Docs fix</a>
 </div>
-<div style="background:linear-gradient(165deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.35);border-radius:16px;padding:18px 20px;margin-top:14px">
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15.5px">Have an idea?</b>
-<div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:4px">Raw ideas enter the pipeline at the top — no homework needed.</div>
-<div style="margin-top:12px"><a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=idea_submission.yml" style="text-decoration:none;display:inline-block;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;border-radius:999px;padding:8px 18px;font-size:12.5px;font-weight:800">Idea submission →</a></div>
+
+<div style="text-align:center;margin:84px auto 0;max-width:820px;padding:0 12px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">05</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">OPERATING CODE</div>
+<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:38px;letter-spacing:-0.03em;margin-top:8px">Organization Principles</div>
 </div>
-<div style="display:flex;gap:10px;margin-top:14px">
-<div style="flex:1;background:linear-gradient(165deg,rgba(140,150,160,0.10),rgba(140,150,160,0.03));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:16px 18px">
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px">Proposing a system?</b>
-<div style="font-size:13px;color:rgba(110,119,129,1);margin-top:4px">Go straight into the pipeline.</div>
-<div style="margin-top:10px"><a href="https://github.com/Hidden-Alchemy/ideas/issues/new?template=project_proposal.yml" style="text-decoration:none;font-size:12.5px;font-weight:600;border-bottom:2px solid rgba(76,107,92,0.5)">Project proposal</a></div>
+
+<div style="text-align:center;margin:30px auto 0;max-width:980px">
+<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(189,156,97,1)">i</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Build, Don't Perform</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">What works matters more than what looks good in a demo.</div></div>
+<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">ii</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Complexity Becomes Invisible</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Good engineering hides unnecessary complexity from the user.</div></div>
+<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">iii</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Automation Creates Leverage</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Automate what shouldn't - need human repetition.</div></div>
+<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">iv</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Design Is Part of Engineering</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">A technically correct system can still be a bad product.</div></div>
+<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(189,156,97,0.12),rgba(140,150,160,0.03));border:1px solid rgba(189,156,97,0.3);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(189,156,97,1)">v</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Experiment Relentlessly</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Prototype, break, measure, refine — record the outcome honestly.</div></div>
+<div style="display:inline-block;width:30%;min-width:270px;vertical-align:top;text-align:left;margin:8px;background:linear-gradient(160deg,rgba(76,107,92,0.13),rgba(140,150,160,0.03));border:1px solid rgba(76,107,92,0.35);border-radius:20px;padding:22px 24px"><div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;font-size:24px;color:rgba(76,107,92,1)">vi</div><div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:17px;margin-top:6px">Details Compound</div><div style="font-size:14.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">Small decisions become large differences when repeated.</div></div>
 </div>
-<div style="flex:1;background:linear-gradient(165deg,rgba(140,150,160,0.10),rgba(140,150,160,0.03));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:16px 18px">
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:14px">Docs fix?</b>
-<div style="font-size:13px;color:rgba(110,119,129,1);margin-top:4px">PR directly — no pre-approval.</div>
-<div style="margin-top:10px"><a href="https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md" style="text-decoration:none;font-size:12.5px;font-weight:600;border-bottom:2px solid rgba(76,107,92,0.5)">Contributing guide</a></div>
-</div>
-</div>
-<div style="margin-top:12px;font-size:12.5px;color:rgba(110,119,129,1)">Read the <a href="https://github.com/Hidden-Alchemy/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> — it is short and worth the two minutes.</div>
-</div>
-</div>
-</div>
-<!-- ================= 05 PRINCIPLES ================= -->
-<div style="max-width:920px;margin:88px auto 0;padding:0 4px">
-<div style="display:flex;align-items:baseline">
-<span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:30px;color:rgba(189,156,97,0.85)">05</span>
-<div style="margin-left:16px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10.5px;letter-spacing:3px;color:rgba(154,164,175,1)">OPERATING CODE</div>
-<h2 style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:28px;letter-spacing:-0.02em;margin:4px 0 0">Organization Principles</h2>
-</div>
-</div>
-<div style="display:flex;flex-wrap:wrap;margin-top:24px">
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<span style="display:inline-block;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:12.5px;font-weight:700">i</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;margin-left:8px">Build, Don't Perform</b>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:8px">What works matters more than what looks impressive in a demo.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:999px;padding:3px 11px;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:12.5px;font-weight:700">ii</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;margin-left:8px">Complexity Should Become Invisible</b>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:8px">Good engineering hides unnecessary complexity from the user.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<span style="display:inline-block;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:12.5px;font-weight:700">iii</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;margin-left:8px">Automation Should Create Leverage</b>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:8px">Automate what shouldn't require human repetition — not everything.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(76,107,92,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<span style="display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;border-radius:999px;padding:3px 11px;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:12.5px;font-weight:700">iv</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;margin-left:8px">Design Is Part of Engineering</b>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:8px">A technically correct system can still be a bad product.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<span style="display:inline-block;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:12.5px;font-weight:700">v</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;margin-left:8px">Experiment Relentlessly</b>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:8px">Prototype. Break. Measure. Refine. Repeat — and record the outcome honestly.</div>
-</div>
-<div style="flex:1;min-width:270px;background:linear-gradient(165deg,rgba(189,156,97,0.10),rgba(140,150,160,0.04));border:1px solid rgba(140,150,160,0.16);border-radius:16px;padding:18px 20px;margin:8px">
-<span style="display:inline-block;background:linear-gradient(135deg,#E6C078,#BD9C61);color:#0d1117;border-radius:999px;padding:3px 11px;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:12.5px;font-weight:700">vi</span>
-<b style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;margin-left:8px">Details Compound</b>
-<div style="font-size:13.5px;line-height:1.6;color:rgba(110,119,129,1);margin-top:8px">Small decisions become large differences when repeated across a system.</div>
+
+<div style="text-align:center;margin:84px auto 0;max-width:900px;padding:28px">
+<div style="background:linear-gradient(160deg,rgba(76,107,92,0.2),rgba(189,156,97,0.14) 55%,rgba(140,150,160,0.04));border:1px solid rgba(76,107,92,0.4);border-radius:28px;padding:52px 30px">
+<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:26px;color:rgba(189,156,97,0.9)">06</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:5px;color:rgba(140,149,159,1);margin-top:6px">JOIN THE LAB</div>
+<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:32px;letter-spacing:-0.02em;margin:20px auto 0;max-width:700px">Membership is earned through contribution,<br><span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:700;color:rgba(76,107,92,1)">never requested on demand.</span></div>
+<div style="font-size:16.5px;line-height:1.8;color:rgba(110,119,129,1);max-width:660px;margin:20px auto 0">Anyone can contribute to this lab without ever becoming a member. When you qualify — <span style="color:rgba(76,107,92,1);font-weight:700">3+ accepted contributions over a month</span> and a <span style="color:rgba(76,107,92,1);font-weight:700">Recognized Contributor</span> badge — a human maintainer reviews and records the decision.</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;letter-spacing:2px;color:rgba(140,149,159,1);margin:20px auto 0">INVITATIONS ARE ALWAYS SENT MANUALLY — NEVER BY AUTOMATION</div>
+<div style="margin-top:26px">
+<a href="https://github.com/Hidden-Alchemy/community/issues/new?template=membership_interest.yml" style="display:inline-block;padding:16px 34px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:16.5px;text-decoration:none;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;box-shadow:0 10px 28px rgba(76,107,92,0.4)">Apply for membership</a>
+<a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md" style="display:inline-block;padding:16px 34px;border-radius:999px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:16.5px;text-decoration:none;border:1.5px solid rgba(76,107,92,0.6);color:rgba(76,107,92,1);margin-left:10px">Read governance</a>
 </div>
 </div>
 </div>
-<!-- ================= 06 JOIN ================= -->
-<div style="max-width:920px;margin:88px auto 0;padding:0 4px">
-<div style="text-align:center;background:linear-gradient(165deg,rgba(76,107,92,0.16),rgba(189,156,97,0.10) 60%,rgba(140,150,160,0.04));border:1px solid rgba(76,107,92,0.35);border-radius:24px;padding:44px 28px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:10.5px;letter-spacing:3px;color:rgba(154,164,175,1)">06 · JOIN THE LAB</div>
-<div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:900;font-size:26px;letter-spacing:-0.02em;margin:16px 0 0">Membership is earned through contribution,<br><span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-weight:600;color:rgba(76,107,92,1)">not requested on demand.</span></div>
-<div style="font-size:14px;line-height:1.65;color:rgba(110,119,129,1);max-width:600px;margin:16px auto 0">
-Organization membership is a separate, reviewed status — anyone can contribute publicly without ever becoming a member. The bar, plainly: be a <b>Recognized Contributor</b> (≥3 accepted contributions over ≥1 month), submit the interest form, and let a human maintainer review and record the decision.
-</div>
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11px;color:rgba(154,164,175,1);margin:16px 0 0">INVITATIONS ARE ALWAYS SENT MANUALLY — NEVER BY AUTOMATION</div>
-<div style="margin-top:22px">
-<a href="https://github.com/Hidden-Alchemy/community/issues/new?template=membership_interest.yml" style="text-decoration:none;display:inline-block;background:linear-gradient(135deg,#6E9E87,#4C6B5C);color:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:800;font-size:14.5px;border-radius:999px;padding:13px 28px;box-shadow:0 8px 22px rgba(76,107,92,0.35)">Apply for membership</a>
-<a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md" style="text-decoration:none;display:inline-block;border:1px solid rgba(76,107,92,0.6);color:rgba(76,107,92,1);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-weight:700;font-size:14.5px;border-radius:999px;padding:13px 28px;margin-left:12px">Read governance</a>
-</div>
-</div>
-</div>
-<!-- ================= FOOTER ================= -->
-<div style="max-width:920px;margin:64px auto 0;padding:0 4px">
-<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px"></div>
-<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:20px">
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11.5px;color:rgba(154,164,175,1)">HIDDEN ALCHEMY · <span style="font-family:Georgia,'Times New Roman',serif;font-style:italic;color:rgba(189,156,97,1)">raw ideas, forged publicly</span></div>
-<div style="font-family:SFMono-Regular,Consolas,Menlo,monospace;font-size:11.5px">
-<a href="https://github.com/Hidden-Alchemy/.github/tree/main/ISSUE_TEMPLATE" style="text-decoration:none;color:rgba(110,119,129,1);margin-right:14px">forms</a>
-<a href="https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md" style="text-decoration:none;color:rgba(110,119,129,1);margin-right:14px">contributing</a>
-<a href="https://github.com/Hidden-Alchemy/.github/blob/main/CODE_OF_CONDUCT.md" style="text-decoration:none;color:rgba(110,119,129,1);margin-right:14px">code of conduct</a>
-<a href="https://github.com/Hidden-Alchemy/.github/blob/main/SECURITY.md" style="text-decoration:none;color:rgba(110,119,129,1)">security</a>
-</div>
-</div>
-<div style="margin-top:14px;font-size:11.5px;color:rgba(154,164,175,1)">This profile is intentionally honest about the current state of the lab — infrastructure first, projects as they become real.</div>
+
+<div style="text-align:center;margin:70px auto 0;max-width:700px;padding:0 12px">
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.6),rgba(76,107,92,0.6),transparent);border-radius:2px"></div>
+<div style="font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:17px;color:rgba(189,156,97,1);margin-top:22px">raw ideas, forged publicly</div>
+<div style="font-family:Menlo,Consolas,monospace;font-size:12px;color:rgba(140,149,159,1);margin-top:14px"><a href="https://github.com/Hidden-Alchemy/.github/blob/main/CONTRIBUTING.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">contribute</a>· <a href="https://github.com/Hidden-Alchemy/.github/blob/main/CODE_OF_CONDUCT.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">conduct</a>· <a href="https://github.com/Hidden-Alchemy/.github/blob/main/SECURITY.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">security</a>· <a href="https://github.com/Hidden-Alchemy/.github/blob/main/GOVERNANCE.md" style="text-decoration:none;color:rgba(140,149,159,1);margin:0 10px">governance</a></div>
 </div>
