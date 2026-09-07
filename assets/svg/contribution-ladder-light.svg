@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 320" role="img" aria-labelledby="cl-t">
+<title id="cl-t">Hidden Alchemy contribution ladder — from Public Participant to Organization Owner</title>
+<defs>
+  <linearGradient id="cl-rung" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#84B397"/><stop offset="1" stop-color="#6E9E87"/>
+  </linearGradient>
+  <linearGradient id="cl-gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#E6C078"/><stop offset="1" stop-color="#BD9C61"/>
+  </linearGradient>
+  <filter id="cl-elev" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="980" height="320" rx="16" fill="#ffffff"/>
+<rect width="980" height="320" rx="16" fill="rgba(76,107,92,0.10)"/>
+<text x="36" y="36" font-family="Menlo, Consolas, monospace" font-size="15" letter-spacing="3" fill="#5B6570">CONTRIBUTION LADDER</text>
+<text x="36" y="58" font-family="Georgia,'Times New Roman',serif" font-style="italic" font-size="14" fill="#57606A">roles earned by demonstrated, sustained contribution</text>
+
+<g id="steps">
+  <rect x="40" y="70" width="900" height="34" rx="8" fill="#F6F8FA" stroke="rgba(60,80,70,0.2)"/>
+  <rect x="40" y="70" width="900" height="34" rx="8" fill="url(#cl-rung)" opacity="0.35">
+    <animate attributeName="opacity" values="0.25;0.5;0.25" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <text x="56" y="92" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8C959F">1</text>
+  <text x="80" y="92" font-family="-apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#212B36">Public Participant</text>
+  <text x="390" y="92" font-family="-apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#5B6570">interacts via issues / PRs / discussions</text>
+</g>
+<g id="step2">
+  <rect x="40" y="111" width="900" height="34" rx="8" fill="#F6F8FA" stroke="rgba(60,80,70,0.2)"/>
+  <rect x="40" y="111" width="900" height="34" rx="8" fill="url(#cl-rung)" opacity="0.55"/>
+  <text x="56" y="133" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8C959F">2</text>
+  <text x="80" y="133" font-family="-apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#212B36">Contributor</text>
+  <text x="390" y="133" font-family="-apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#5B6570">1 merged PR, or 1 idea promoted to a real repository</text>
+</g>
+<g id="step3">
+  <rect x="40" y="152" width="900" height="34" rx="8" fill="#F6F8FA" stroke="rgba(189,156,97,0.7)"/>
+  <rect x="40" y="152" width="900" height="34" rx="8" fill="rgba(189,156,97,0.28)">
+    <animate attributeName="opacity" values="0.2;0.45;0.2" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="56" y="174" font-family="Menlo, Consolas, monospace" font-size="12" fill="#A08A5A">3</text>
+  <text x="80" y="174" font-family="-apple-system, Segoe UI, sans-serif" font-size="15" font-weight="800" fill="#E6C078">Recognized Contributor</text>
+  <text x="390" y="174" font-family="-apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#8A6F3F">3 accepted contributions spanning ≥1 month · credited in the recognition log</text>
+  <circle cx="918" cy="169" r="5" fill="#BD9C61" filter="url(#cl-elev)"><animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+</g>
+<g id="step4">
+  <rect x="40" y="193" width="900" height="34" rx="8" fill="#F6F8FA" stroke="rgba(60,80,70,0.2)"/>
+  <rect x="40" y="193" width="900" height="34" rx="8" fill="url(#cl-rung)" opacity="0.7"/>
+  <text x="56" y="215" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8C959F">4</text>
+  <text x="80" y="215" font-family="-apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#212B36">Community Member</text>
+  <text x="390" y="215" font-family="-apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#5B6570">reviewed org member; added to the community team</text>
+</g>
+<g id="step5">
+  <rect x="40" y="234" width="900" height="34" rx="8" fill="#F6F8FA" stroke="rgba(60,80,70,0.2)"/>
+  <rect x="40" y="234" width="900" height="34" rx="8" fill="url(#cl-rung)" opacity="0.8"/>
+  <text x="56" y="256" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8C959F">5</text>
+  <text x="80" y="256" font-family="-apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#212B36">Project Member</text>
+  <text x="390" y="256" font-family="-apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#5B6570">write access to one specific repository</text>
+</g>
+<g id="step6">
+  <rect x="40" y="275" width="900" height="34" rx="8" fill="#F6F8FA" stroke="rgba(60,80,70,0.2)"/>
+  <rect x="40" y="275" width="900" height="34" rx="8" fill="url(#cl-rung)" opacity="0.6"/>
+  <text x="56" y="297" font-family="Menlo, Consolas, monospace" font-size="12" fill="#8C959F">6</text>
+  <text x="80" y="297" font-family="-apple-system, Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#212B36">Maintainer → Core Team → Organization Owner</text>
+  <text x="390" y="297" font-family="-apple-system, Segoe UI, sans-serif" font-size="12.5" fill="#5B6570">appointed leadership; ultimate owner is kept to 1–2 people</text>
+</g>
+</svg>

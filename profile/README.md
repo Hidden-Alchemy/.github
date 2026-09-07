@@ -2,12 +2,12 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-white-transparent.png">
-  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-black-transparent.png" width="150" alt="Hidden Alchemy mark">
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/logos/logo-black-transparent.png" width="164" alt="Hidden Alchemy mark">
 </picture>
 
-# <span style="font-size:34px;font-weight:900;letter-spacing:-0.5px">Hidden Alchemy</span>
+# <span style="font-size:44px;font-weight:900;letter-spacing:-0.5px">Hidden Alchemy</span>
 
-<span style="font-size:17px;color:rgba(130,140,150,1)">open engineering laboratory · raw ideas → real systems</span>
+<span style="font-size:20px;color:rgba(130,140,150,1)">open engineering laboratory · raw ideas → real systems</span>
 
 <br>
 
@@ -21,6 +21,15 @@
 <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/pulse/assets/svg/org-pulse.svg" width="100%" style="max-width:900px;border-radius:16px" alt="Live org pulse — repositories, ideas in flight, active systems, pipeline stage">
 
 <div style="margin-top:6px;font-size:11.5px;letter-spacing:1px;color:rgba(154,164,175,1)">LIVE SNAPSHOT · REGENERATED DAILY BY <a href="https://github.com/Hidden-Alchemy/.github/blob/main/.github/workflows/org-pulse-svg.yml" style="text-decoration:none;color:rgba(154,164,175,1)">org-pulse</a></div>
+
+<br>
+
+<div align="center" style="max-width:900px;margin:8px auto 0">
+  <div style="text-align:left;background:linear-gradient(160deg,rgba(189,156,97,0.18),rgba(76,107,92,0.08));border:1px solid rgba(189,156,97,0.45);border-radius:18px;padding:18px 22px">
+    <span style="font-size:12px;font-weight:800;letter-spacing:3px;color:#BD9C61">NEXT GATE · CONCEPT</span>
+    <div style="font-size:15.5px;line-height:1.7;color:rgba(110,119,129,1);margin-top:8px">The flagship <b><a href="https://github.com/Hidden-Alchemy/idea-forge" style="text-decoration:none;color:inherit">idea-forge</a></b> is mid-concept — its research is public, and the next human gate is <b style="color:rgba(76,107,92,1)">Architecture</b>. Every transition stays a decision, never an automation.</div>
+  </div>
+</div>
 
 <br>
 
@@ -244,6 +253,18 @@ Your entry point is one of these, or a direct pull request to documentation:
 
 <div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
 
+<span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">The contribution ladder</span>
+<h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">Contribution Ladder</h2>
+
+<div style="font-size:13.5px;line-height:1.7;color:rgba(110,119,129,1);margin-bottom:10px">Every tier below is earned through observable, sustained contribution — role titles are deliberately professional, not gimmicky. The recognition log is the honest ledger.</div>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-ladder-dark.svg">
+  <img src="https://raw.githubusercontent.com/Hidden-Alchemy/.github/main/assets/svg/contribution-ladder-light.svg" width="100%" style="max-width:700px;border-radius:16px" alt="Contribution ladder — Public Participant → Contributor → Recognized Contributor → Community Member → Project Member → Maintainer → Core Team → Organization Owner">
+</picture>
+
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
+
 <span style="font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(154,164,175,1)">The compact list</span>
 <h2 style="font-size:26px;font-weight:800;letter-spacing:-0.3px">Organization Principles</h2>
 
@@ -318,6 +339,30 @@ Your entry point is one of these, or a direct pull request to documentation:
 </div>
 
 </div>
+
+<div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
+
+<div style="margin:0 0 6px"><b style="font-size:15px">Field notes — what people usually ask</b></div>
+
+<details>
+<summary style="cursor:pointer;font-size:14.5px;font-weight:700">How do I know what stage a project is in?</summary>
+<div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">Every repository carries its current pipeline stage and a lifecycle status tag (ACTIVE, CONCEPT, EXPERIMENT, ARCHIVED) in its README — and the org-wide <code style="font-family:SFMono-Regular,Consolas,Menlo,monospace">repo-health-check</code> verifies those stay honest. The live <b>Org Pulse</b> snapshot at the top of this page repaints the same story every day.</div>
+</details>
+
+<details>
+<summary style="cursor:pointer;font-size:14.5px;font-weight:700">What counts as a contribution?</summary>
+<div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">A merged pull request, or an idea that is promoted into a real repository. At least three accepted contributions spanning at least a month earn the <b>Recognized Contributor</b> tier — the bar for the Membership Interest form.</div>
+</details>
+
+<details>
+<summary style="cursor:pointer;font-size:14.5px;font-weight:700">Can I join as a member on day one?</summary>
+<div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">No — membership is earned through contribution, not requested on demand. But it is never required either: you can contribute publicly without any membership at all, at every tier above the membership line.</div>
+</details>
+
+<details>
+<summary style="cursor:pointer;font-size:14.5px;font-weight:700">Does automation ever approve anything?</summary>
+<div style="font-size:13.5px;color:rgba(110,119,129,1);margin-top:8px">Automation only assists — labelling, welcome messages, stale reminders. Decisions that change a project's stage or a person's membership are always made and recorded by a human.</div>
+</details>
 
 <div style="height:2px;background:linear-gradient(90deg,transparent,rgba(189,156,97,0.55),rgba(76,107,92,0.55),transparent);border-radius:2px;margin:26px 0 20px"></div>
 
