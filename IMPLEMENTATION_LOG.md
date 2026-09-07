@@ -491,3 +491,117 @@ _End of M3 entry._
 - #2 Private repos — still unconfirmed; reviews requested at M4 (workflows run
       only on public default repos).
 - #4 Verdigris/brand — RESOLVED (M2).
+
+---
+
+## M4 — Automation Foundation
+
+**Date:** 2026-09-07
+**Objective:** Ship the four §29 workflows with security review at creation
+time. Prereq: M3 signed off (owner "continue" directive received).
+**Deliverables live in `.github/workflows/`:** org-wide *defaults for the
+`.github` repo itself*, per §29; GitHub does not auto-propagate workflow files,
+so M5 copies them into `ideas`/`community` (that milestone's checklist already
+accounts for this).
+**Also added:** `.github/dependabot.yml` (§30.6).
+
+### Cross-cutting security self-review (that passed before any commit)
+
+Verified by inspection + grep across all four files (checked §21/§30):
+- Explicit top-level `permissions:` blocks, minimal: welcome `issues/PRs write`,
+  labeler `issues write`, health `contents read + checks write`, stale
+  `issues/PRs write`. No `write-all`, no `administration`, no `organization-*`,
+  no `packages`.
+- No secrets anywhere except `secrets.GITHUB_TOKEN` (never a PAT).
+- No `pull_request_target` as a real key (the string appears only in comments
+  documenting the prohibition). No checkout of untrusted fork code.
+- Third-party actions pinned to full SHAs: `actions/checkout@11d5960a…` (v4.4.0),
+  `actions/first-interaction@1c468894…` (v3.1.0). `dependabot.yml` labelled
+  `labels: []` to keep §25's "no extras" taxonomy — Dependabot posts no sticker.
+
+### Task 4.1.1 — welcome-first-interaction.yml ✅
+
+per `§29`: no checkout step, `issues/PRs write` only, SHA-pinned first-interaction,
+non-generic templated messages that reference the specific repo's CONTRIBUTING
+and First-Time pipeline. Live proof: it fired on the Dependabot PR #3 and left a
+"welcome" comment (first interaction, then manually cleaned after verifying).
+Full first-human simulation (fresh account) deferred to Manual QA.
+
+### Task 4.2.1 — issue-labeler.yml ✅
+
+Mapping source = the labels an Issue Form emits (GitHub does NOT expose a
+reliable form-ID to workflows — documented). Native form `labels:` already apply
+§26 sets at submit; the workflow is the safe no-op/idempotent + fallback path:
+- known type label present → notice, exit 0 (no double-labeling);
+- otherwise → apply `status:triage` only + warning in run log, never an error
+  surfaced to the issue author.
+**Live test:** opened issue #2 with no labels (simulated blank/API) → workflow
+applied exactly `status:triage`, nothing else. PASS.
+
+### Task 4.3.1 — repo-health-check.yml ✅
+
+Checks four conditions (LICENSE present; README present + no
+TODO/placeholder/TBD; §24 `Status:` line — syntax `Status: \`<keyword>\``/`Status:
+<keyword>`; SECURITY.md present), reports a pass/fail **check-run** (the only
+side effect; never auto-blocks merges outside a §31 tier) via `gh api` + step
+summary. Fork PRs run with the same minimal read-only block — static perms
+`contents:read + checks:write` per §29; interpretation noted: "read-only" means
+no repository-content writes and no elevated token on fork code.
+**Live test:** the commit that introduced the workflow triggered it on `main` →
+`completed/success` with summary "LICENSE ✓ / README ✓ / §24 status line ✓ /
+SECURITY.md ✓". PASS.
+**Reconciliation made during testing:** README's status line was initially the
+markdown-bold `**Status:**` form, which the check could not parse → canonical
+form documented (`Status: \`active\``) and README fixed; regex tolerates
+backticks. Also fixed a latent CODEOWNERS bug: `/workflows/**` never matched
+`/.github/workflows/**` (the real path) → corrected so §30.7 review gates the
+actual files. Both noted in the M4 diff.
+
+### Task 4.4.1 — stale-triage.yml ✅
+
+60-day no-activity → single neutral "conversation needs owner/maintainer
+decision" comment: never closes, never auto-anything. Membership-interest
+(`membership:needs-review`) issues ≥21 days → comment pinging
+`@Hidden-Alchemy/core`, per §20.
+**Reconciliation (logged):** §25's label taxonomy is final with no extras and
+has no `status:stale`; §29 says "status:stale-equivalent label *or comment*".
+Chose the comment (preserves taxonomy exactly). If the owner later wants a real
+`status:stale` label, that's an amendment to §25 requiring explicit sign-off.
+**Schedule trigger shipped DISABLED (commented) per Task 4.4.1's dry-run-first
+gate** — enabled by a one-line commit after dry-run sign-off. `workflow_dispatch`
+drives it until then (inputs: `dry_run`, `stale_days`, `membership_days`).
+**Test harness results** (scratch issues #4/#5, + real Dependabot PR, forced
+`0`-day thresholds, then cleaned up):
+- dry-run: 0 comments, clean report, conclusion success ✅
+- forced real: stale comment on #4, membership @core ping on #5, stale note on
+  PR #3 ✅
+- idempotency: marker `<!-- stale-triage -->` prevents double-commenting; rerun
+  produced zero new comments ✅
+- iterative fixes landed during testing (each is a separate commit on `main`,
+  all before this log entry): `--repo` required (runner has no checkout);
+  `gh api` path needs `repos/` prefix; PR-comment call must use the API helper
+  with `payload`. No workflow uses a secret outside GITHUB_TOKEN throughout.
+
+### M4 Completion Checklist
+
+- [x] Four workflows implemented, tested (labeler #2, health on own push, stale
+      three-phase harness, welcome on #3), and security-reviewed at creation
+- [x] No workflow requests a secret or PAT (inspection: only GITHUB_TOKEN)
+- [x] No workflow uses `pull_request_target` (asserted: no real key anywhere)
+- [x] Implementation log updated with per-workflow test results
+- [x] CODEOWNERS path bug fixed so §30.7 gating covers the actual files
+- [x] dependabot.yml live — opened its first supply-chain PR #3 (checkout
+      bump), awaiting human review/merge
+- [ ] Schedule trigger remains OFF — **owner decision required: enable
+      `stale-triage` daily cron after dry-run review?** (default: enable)
+- [ ] Manual QA: first-time human contributor simulation via a second account
+      (welcome/labeler), and the §33 M5 workflow-copy plan will re-verify
+- [ ] **Explicit sign-off required before proceeding to M5**
+
+_End of M4 entry._
+
+### Open Issue status update
+
+- #1 Owners RESOLVED (M1). #3 Teams RESOLVED (M1). #4 Verdigris/brand RESOLVED (M2).
+- #2 Private repos: still unconfirmed (owner question); unaffected through M4
+  (all automation runs on public repos; owner can reply whenever).
