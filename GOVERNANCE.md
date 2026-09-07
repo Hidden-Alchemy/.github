@@ -74,20 +74,72 @@ inferred or set by automation.
 
 ## Membership
 
-**Status: this section is finalized in milestone M7.** The membership model,
-request process, levels, and security boundary are specified in detail by the
-organization's implementation PRD (§19–§21) and will be described here in full
-once the process has been exercised end-to-end. The binding security principle
-that will govern it is already fixed:
+> **Organizational membership is not the same as contributing to Hidden
+> Alchemy.** Anyone can contribute publicly without ever becoming an org
+> member. Membership is a separate, reviewed status granted to people who have
+> already demonstrated sustained, trustworthy contribution.
 
-> No workflow triggered by untrusted, publicly-writable input may ever
-> directly perform a privileged organization action — including sending
-> organization invitations, modifying team membership, or changing repository
-> permissions. Organization invitations are always sent manually by a Core
-> Team member.
+### Levels
 
-Eligibility for membership is earned through contribution and reviewed by the
-Core Team; it is never requested on demand.
+| Level | Definition | How you get there |
+|---|---|---|
+| Public Participant | Interacts via issues/PRs/Discussions; no write access | None |
+| Contributor | ≥1 merged PR or ≥1 idea promoted to a real repository | 1 accepted contribution |
+| Recognized Contributor | ≥3 accepted contributions spanning ≥1 month | Sustained contribution; credited in the recognition log |
+| Community Member | Reviewed org member (base tier), added to `community` team | Recognized Contributor status + Core Team approval |
+| Project Member | Active contributor with write access to one specific repo | Maintainer of that repo requests elevation |
+| Maintainer | Owns day-to-day health of one or more repositories | Appointed by Core Team |
+| Core Team | Cross-repo technical leadership | Appointed by Organization Owner |
+| Organization Owner | Ultimate administrative control | Founder(s) only; kept minimal (1–2 people) |
+
+Role titles are deliberately professional, not gimmicky.
+
+### Request & review process
+
+1. **Eligibility is earned first.** A request from someone who is not a
+   Recognized Contributor is declined with a written reason pointing at the
+   actual bar — re-application after earning it is always welcome.
+2. **Submit** the Membership Interest form (in the `community` repo). The form
+   is public; no sensitive personal data is requested.
+3. **Automation only assists** — labelling (`membership:needs-review`),
+   duplicate/ack indicators, and a stale reminder if a request sits unreviewed
+   for 21 days (never auto-approved or auto-declined).
+4. **Human review** by the Core Team against the criteria above.
+5. **Decision recorded** as a comment + label on the issue
+   (`membership:approved` / `membership:declined` / `membership:deferred`) and
+   the issue is closed.
+6. **If approved**, a Core Team member manually sends the GitHub
+   organization invitation *outside of any workflow*, adds the person to the
+   `community` team, and works the onboarding checklist (§20.1 — invitation
+   accepted, team add, welcome, governance/code-of-conduct pointers) as a
+   checklist on the closed issue.
+
+This process was exercised end-to-end in a dry run during milestone M7.
+
+### Removal criteria
+
+- Prolonged inactivity alone is **not** grounds for removing Community Member
+  status.
+- Removal applies for Code of Conduct violations, security policy violations,
+  or voluntary departure.
+- Reducing a repository's write access (Project Member / Maintainer) does not
+  remove org membership — these are separate grants.
+
+### Security boundary (binding)
+
+> No workflow triggered by untrusted, publicly-writable input (an issue opened
+> by any GitHub user, a comment, a fork PR) may ever directly perform a
+> privileged organization action — including sending an org invitation,
+> modifying team membership, changing repository permissions, or changing
+> branch protection.
+
+- **Organization invitations are always sent manually by a Core Team member —
+  never by automation.** This is a deliberate scope boundary, not a
+  limitation to be optimized away.
+- No workflow in this organization uses a PAT or org-scoped secret, and no
+  workflow carries `admin:org` scope.
+- Permitted automation around membership is strictly labelling, comments, and
+  reminders — nothing that changes membership state.
 
 ## Future expansion triggers
 
