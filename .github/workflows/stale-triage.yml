@@ -62,9 +62,9 @@ jobs:
           import datetime as dt, json, os, subprocess, sys
 
           repo = os.environ["GITHUB_REPOSITORY"]
-          dry_run = os.environ.get("DRY_RUN", "true").lower() == "true"
-          stale_days = int(os.environ.get("STALE_DAYS", "60"))
-          mem_days = int(os.environ.get("MEMBERSHIP_DAYS", "21"))
+          dry_run = os.environ.get("DRY_RUN", "true").lower() != "false"
+          stale_days = int(os.environ.get("STALE_DAYS", "60") or 60)
+          mem_days = int(os.environ.get("MEMBERSHIP_DAYS", "21") or 21)
           now = dt.datetime.now(dt.timezone.utc)
           marker = "<!-- stale-triage -->"
 
